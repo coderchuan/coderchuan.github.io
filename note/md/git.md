@@ -195,9 +195,10 @@
     * 解释
         * `ALIAS`：远程仓库在本地的别名，可自定义
         * `URL`：远程仓库地址，支持多种协议，如：   
-            * SSH：`ssh://username[@host[:port]]/git_dir_path`。私钥文件的指定详见"ssh.md"中关于"配置客户端"配置的内容
-                * username：远程主机名。
-                    * 若已经配置ssh的config文件，此处应配置为config文件中的Host项的值，同时省略`@host[:port]`
+            * SSH：完整形式`ssh://username[@host[:port]]/git_dir_path`。私钥文件的指定详见"ssh.md"中关于"配置客户端"配置的内容
+                * 注意：当端口为22时,可以使用简化形式`username@host:git_dir_path`，
+                * username：远程主机的用户名。
+                    * 若已经配置ssh的config文件，此处应配置为config文件中的Host项的值，同时省略`@host[:port]`。仅适用于完整形式
                     * 未配置ssh的config文件时，此处应配置为远程主机的用户名，`@host[:port]`应正确配置
                     * github配置。示例`ssh://git@github.com/coderchuan/note.git`
                         * ssh登录用户名:git 
