@@ -31,20 +31,21 @@
 * 语法
     * 克隆远程仓库所有分支
         ```
-        git clone [--depth=N] URL 
+        git clone [--depth=N] URL [NEW_DIR]
         ```
     * 克隆远程仓库所有分支，但是只在本地创建指定分支
         ```
-        git clone -b BRANCH_NAME URL
+        git clone [--depth=N] -b BRANCH_NAME URL [NEW_DIR] 
         ```
     * 克隆远程仓库指定分支，并且只在本地创建指定分支
         ```
-        git clone --single-branch -b BRANCH_NAME URL 
+        git clone [--depth=N] --single-branch -b BRANCH_NAME URL [NEW_DIR]
         ```
 * 解释
     * `--depth=N`：克隆深度，`N`为数字，表示深度，如`--depth=1`
     * `URL`：git仓库地址
     * `BRANCH_NAME`：远程仓库分支名
+    * `NEW_DIR`：在当前目录创建的名为`NEW_DIR`的文件夹，并将仓库克隆在这个文件夹内。省略此参数则与远程仓库的名称相同
     * 注意：此命令不使用`--local`用户环境配置
 
 ## 用户配置
