@@ -31,20 +31,21 @@
 * 语法
     * 克隆远程仓库所有分支
         ```
-        git clone [--depth=N] URL 
+        git clone [--depth=N] URL [NEW_DIR]
         ```
     * 克隆远程仓库所有分支，但是只在本地创建指定分支
         ```
-        git clone -b BRANCH_NAME URL
+        git clone [--depth=N] -b BRANCH_NAME URL [NEW_DIR] 
         ```
     * 克隆远程仓库指定分支，并且只在本地创建指定分支
         ```
-        git clone --single-branch -b BRANCH_NAME URL 
+        git clone [--depth=N] --single-branch -b BRANCH_NAME URL [NEW_DIR]
         ```
 * 解释
     * `--depth=N`：克隆深度，`N`为数字，表示深度，如`--depth=1`
     * `URL`：git仓库地址
     * `BRANCH_NAME`：远程仓库分支名
+    * `NEW_DIR`：在当前目录创建的名为`NEW_DIR`的文件夹，并将仓库克隆在这个文件夹内。省略此参数则与远程仓库的名称相同
     * 注意：此命令不使用`--local`用户环境配置
 
 ## 用户配置
@@ -195,9 +196,10 @@
     * 解释
         * `ALIAS`：远程仓库在本地的别名，可自定义
         * `URL`：远程仓库地址，支持多种协议，如：   
-            * SSH：`ssh://username[@host[:port]]/git_dir_path`。私钥文件的指定详见"ssh.md"中关于"配置客户端"配置的内容
-                * username：远程主机名。
-                    * 若已经配置ssh的config文件，此处应配置为config文件中的Host项的值，同时省略`@host[:port]`
+            * SSH：完整形式`ssh://username[@host[:port]]/git_dir_path`。私钥文件的指定详见"ssh.md"中关于"配置客户端"配置的内容
+                * 注意：当端口为22时,可以使用简化形式`username@host:git_dir_path`，
+                * username：远程主机的用户名。
+                    * 若已经配置ssh的config文件，此处应配置为config文件中的Host项的值，同时省略`@host[:port]`。仅适用于完整形式
                     * 未配置ssh的config文件时，此处应配置为远程主机的用户名，`@host[:port]`应正确配置
                     * github配置。示例`ssh://git@github.com/coderchuan/note.git`
                         * ssh登录用户名:git 

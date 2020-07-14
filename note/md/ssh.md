@@ -152,7 +152,7 @@
     * `user@`：要登录的远程主机的用户名。如果不指定则默认为本地当前的用户 
     * `host`：要登录的远程主机的ip 
     * `port`：要登录的远程主机的端口,默认值为22 
-    * `-i identity_file`：指定要使用的私匙,identity_file表示私匙路径及文件。若不指定则使用默认的私匙id_rsa。   
+    * `-i identity_file`：指定要使用的私匙,identity_file表示私匙文件。若不指定则使用默认的私匙id_rsa。   
     * `-o ProxyCommand ProxyCommand='ssh proxyUser@proxyHost [-p proxyPort] -W %h:%p'`：释义如下：
         * `proxyUser`：代理(跳板机)用户名
         * `proxyHost`：代理(跳板机)IP 
