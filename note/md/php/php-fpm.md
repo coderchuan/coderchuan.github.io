@@ -5,7 +5,7 @@
     * `log_level = ERROE_LEVE`：非必须。错误级别。ERROE_LEVE表示错误级别,可取以下值：alert, error, warning, notice, debug, 错误级别依次降
     * `error_log = LOG_FILE_PATH`：必须。错误日志文件。LOG_FILE_PATH表示错误日志文件 
 
-## `www.conf`
+## www.conf
 * `[www]`配置
     * `user = USERNAME`：非必须。错误级别。ERROE_LEVE表示错误级别,可取以下值：alert, error, warning, notice, debug, 错误级别依次降低。默认为：notice
         * `USERNAME`：用户名 
