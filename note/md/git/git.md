@@ -482,6 +482,10 @@
             ```
             git branch {-d|-D} DEL_BRANCH_NAME
             ```
+        * 删除远程仓库中的分支
+            ```
+            git push REM_NAME :REM_BRANCH_NAME
+            ```
         * 重命名分支
             ```
             git branch {-m|-M} OLD_BRANCH_NAME NEW_BRANCH_NAME
@@ -507,6 +511,8 @@
         * `-d`：删除分支选项
         * `-D`：强制删除分支选项
         * `DEL_BRANCH_NAME`：删除分支的分支名称
+        * `REM_NAME`：远程仓库名
+        * `REM_BRANCH_NAME`：远程分支名
         * `-m`：重命名分支选项
         * `-M`：强制重命名分支选项 
         * `NEW_BRANCH_NAME`：重命名分支的新名称 
