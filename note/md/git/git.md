@@ -471,9 +471,18 @@
             ```
             git branch {-m|-M} OLD_BRANCH_NAME NEW_BRANCH_NAME
             ```
-        * 创建新分支
+        * 创建基于当前分支的新分支
             ```
             git branch CRE_BRANCH_NAME
+            ```
+        * 创建基于当前分支的新分支并切换到新分支
+            ```
+            git checkout -b CRE_BRANCH_NAME 
+            ```
+        * 创建空的新分支并切换到新分支(提交文件`git commit`后可见此分支) 
+            ```
+            git checkout --orphan CRE_BRANCH_NAME
+            git rm -rf .
             ```
     * 解释
         * 无参数：查看当前仓库下的本地分支
