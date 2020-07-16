@@ -693,7 +693,8 @@ date 参数 +格式
 ****************************************************************************************** 
 常用技巧：
 ****************************** 
-cat /etc/*release*                                  查看发行信息 
+cat /etc/issue                                      查看发行简略信息
+cat /etc/*release*                                  查看发行详细信息
 cat /etc/*release* |egrep '^VERSION_ID=|^ID='       查看系统名称和版本 
                                                         从github更新当前的软件源时地址末尾的文件名应该是ID与VERSION_ID的值使用下划线连接,如下(ubuntu_18.04即ID为ubuntu,VERSION_ID为18.04):
 uname -m                                            查看系统构架 
