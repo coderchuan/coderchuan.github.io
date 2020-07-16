@@ -225,6 +225,21 @@
                         github仓库文件夹相对路径：~/test_git
                     ```
             * HTTPS：`https://www.github.com[:port]/git_dir_path`
+* 重命名远程仓库
+    * 语法
+        ```
+        git remote rename <old> <new>
+        ```
+    * 解释
+        * `old`：旧名称
+        * `new`：新名称
+* 移除远程仓库
+    * 语法
+        ```
+        git remote remove <name>
+        ```
+    * 解释
+        * `name`：仓库名称
 * 修改远程仓库地址、在同一个别名中添加新的远程仓库地址
     * 语法
         * 修改远程仓库地址
