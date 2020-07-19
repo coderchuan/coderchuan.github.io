@@ -35,10 +35,15 @@
     * 配置项 
         * `ListenAddress[:port]`：要监听的本机IP(可指定端口)，支持ipv4和ipv6。默认监听所有，`0.0.0.0`表示所有ipv4地址，`::`表示所有ipv6地址。可以配置多项
         * `Prot`：服务端口,不配置此项且`ListenAddress`中未指定端口时,默认22。当`ListenAddress`中指定端口时，此项被忽略
+        * `TCPKeepAlive`：当与ssh服务器建立后每隔一段时间就发送TCP心跳包以防止连接断开
+            `yes`：发送心跳包
+            `no`：不发送心跳包
         * `PasswordAuthentication`：允许密码登录。默认开启
+            `yes`：允许密码登录
+            `no`：禁止登录
         * `PermitRootLogin`：root用户登录权限设定。默认root禁止密码登录
             `prohibit-password`：禁止密码登录
-            `yes`：允许密钥和密码登录
+            `yes`：允许密钥和密码登录。必须同时设置`PasswordAuthentication yes`
             `no`：禁止登录
 
 ## 配置客户端:
@@ -142,14 +147,15 @@
 ## 登录
 * 指令
     ```
+    ssh [user@]host [-p port] [-i identity_file]
+    ssh SSH_CONFIG_HOST_NAME
     ssh [user@]host [-p port] -o ProxyCommand='ssh proxyUser@proxyHost [-p proxyPort] -W %h:%p'
-    ssh [user@]host [-p port] 
     ssh [user@]hostname [command] [-1246AaCfGgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec] [-D [bind_address:]port] [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11] [-i identity_file] [-J [user@]host[:port]] [-L address] [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port] [-Q query_option] [-R address] [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]] 
     ```
 * 功能：远程登录 
 * 权限：当前用户 
 * 参数：
-    * `user@`：要登录的远程主机的用户名。如果不指定则默认为本地当前的用户 
+    * `user`：要登录的远程主机的用户名。如果不指定则默认为本地当前的用户名
     * `host`：要登录的远程主机的ip 
     * `port`：要登录的远程主机的端口,默认值为22 
     * `-i identity_file`：指定要使用的私匙,identity_file表示私匙文件。若不指定则使用默认的私匙id_rsa。   
@@ -160,12 +166,13 @@
         * `%h:%p`：代表targetHost:targetPort。表示代理(跳板机)对于输入应该定向到targetHost:targetPort 
     * `hostname`：远程主机地址
     * `command`：直接在远程主机执行命令而不是登录。 
-    * `-A`：允许代理(使用此参数时不能使用配置文件`./ssh/config`中设置的别名)。使用此命令前需要将指定的密匙加入代理配置(`ssh-agent bash`、`ssh-add`)      
+    * `-A`：允许代理(使用此参数时不能使用配置文件`~/.ssh/config`中设置的别名)。使用此命令前需要将指定的密匙加入代理配置(`ssh-agent bash`、`ssh-add`)      
     * `-W host:port`：输出输入交互的`host:port`,即要连接的远程主机的ip和端口。此参数用于代理(跳板机)，`%h:%p`可代替`host:port`表示主命令中的ip地址和端口   
     * `-1`：使用第一版ssh协议 
     * `-2`：使用第二版ssh协议。默认 
     * `-4`：使用IPV4 
     * `-6`：使用IPV6  
+    * `SSH_CONFIG_HOST_NAME`：`ssh`配置文件`~/.ssh/config`中配置的`Host`项的值。此命令可直接使用`config`配置文件登录
 * 使用示例：
     ```
     ssh centos@192.168.23.130 -p 22 -o ProxyCommand='ssh ubuntu@192.168.23.129 -p 22 -W %h:%p'      
@@ -259,3 +266,42 @@
         * `host`：要添加公钥的主机IP
         * `-p port`：要添加公钥的主机端口,port表示端口号 
     * 示例：`ssh-copy-id -i "/mnt/c/Users/yang/.ssh/myId.pub" root@192.168.1.7 -p8022`
+
+## SSH建立隧道
+* 防止断连
+    * 设置`/etc/ssh/sshd_config`中的`TCPKeepAlive yes`
+    * 在连接参数中设置 `-o TCPKeepAlive=yes` 
+* 转发类型
+    * 本地转发：
+        * 语法：`ssh [-o TCPKeepAlive=yes] -[C][g][[f]N]L [LOCAL_ADDRESS:]LOCAL_PORT:AIM_ADDRESS:AIM_PORT {[username@]host[:port]|SSH_CONFIG_HOST_NAME`
+        * 含义：在本机建立隧道，此隧道把本机与`host`中介主机联通，所有对`LOCAL_ADDRESS:LOCAL_PORT`的访问都将由中介主机`host`发起对`AIM_ADDRESS:AIM_PORT`的访问
+        * `-o TCPKeepAlive=yes`：定时发送跳包以防止断连
+        * `LOCAL_ADDRESS`：将要与服务器绑定的本地IP地址，ipv6地址需要在两端加`[`和`]`。默认为回环地址
+        * `LOCAL_PORT`：将要与服务器绑定的本地端口
+        * `AIM_ADDRESS`：服务器上被绑定的IP，ipv6地址需要在两端加`[`和`]`，此IP必须可以被`host`中介主机访问 
+        * `AIM_PORT`：服务器上被绑定的端口
+        * `username`：ssh登录用户名，如果转发成功，则相当于此用户访问被转发的访问内容。如果不指定则默认为本地当前的用户名
+        * `host`：中介主机。ssh登录的主机地址
+        * `port`：ssh登录端口。默认为22
+        * `SSH_CONFIG_HOST_NAME`：`ssh`配置文件`~/.ssh/config`中配置的`Host`项的值 
+        * `f`：后台启用，和`N`一起使用以在后台启用隧道
+        * `N`：不打开远程shell
+        * `g`：将`LOCAL_ADDRESS`的默认值指定为`全零地址`
+        * `C`：压缩数据传输 
+    * 远程转发
+        * 语法：`ssh -[C][g][[f]N]L [REMOTE_ADDRESS:]REMOTE_PORT:AIM_ADDRESS:AIM_PORT {[username@]host[:port]|SSH_CONFIG_HOST_NAME`
+        * 含义：在`host`主机建立隧道，此隧道把`host`主机与本机联通，所有对`host`主机的`REMOTE_ADDRESS:REMOTE_PORT`访问都将由本机发起对`AIM_ADDRESS:AIM_PORT`的访问
+        * `-o TCPKeepAlive=yes`：定时发送跳包以防止断连
+        * `REMOTE_ADDRESS`：将要与服务器绑定的远程IP地址，ipv6地址需要在两端加`[`和`]`，此IP必须在host主机中，默认值为全零地址。此值必须在host主机中的`/etc/ssh/sshd_config`文件中设置`GatewayPorts yes`才会生效否则会将此值替换为远程回环地址。
+        * `REMOTE_PORT`：将要与服务器绑定的远程端口
+        * `AIM_ADDRESS`：服务器上被访问的IP，ipv6地址需要在两端加`[`和`]`，此IP必须可以被本机访问 
+        * `AIM_PORT`：服务器上被访问的端口
+        * `username`：ssh登录用户名，如果转发成功，则相当于此用户访问被转发的访问内容。如果不指定则默认为本地当前的用户名
+        * `host`：ssh登录的主机地址
+        * `port`：ssh登录端口。默认为22
+        * `SSH_CONFIG_HOST_NAME`：`ssh`配置文件`~/.ssh/config`中配置的`Host`项的值 
+        * `f`：后台启用，和`N`一起使用以在后台启用隧道
+        * `N`：不打开远程shell
+        * `g`：将`LOCAL_ADDRESS`的默认值指定为`全零地址`
+        * `C`：压缩数据传输 
+    * 动态转发

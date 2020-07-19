@@ -196,11 +196,10 @@
     * 解释
         * `ALIAS`：远程仓库在本地的别名，可自定义
         * `URL`：远程仓库地址，支持多种协议，如：   
-            * SSH：完整形式`ssh://username[@host[:port]]/git_dir_path`。私钥文件的指定详见"ssh.md"中关于"配置客户端"配置的内容
-                * 注意：当端口为22时,可以使用简化形式`username@host:git_dir_path`，
-                * username：远程主机的用户名。
-                    * 若已经配置ssh的config文件，此处应配置为config文件中的Host项的值，同时省略`@host[:port]`。仅适用于完整形式
-                    * 未配置ssh的config文件时，此处应配置为远程主机的用户名，`@host[:port]`应正确配置
+            * SSH
+                * 完整形式：`ssh://{[username@]host[:port]|SSH_CONFIG_HOST_NAME}/git_dir_path`
+                * 简化形式：`username@host:git_dir_path`，仅适用于22端口
+                * username：远程主机的用户名。如果不指定则默认为本地当前的用户名
                     * github配置。示例`ssh://git@github.com/coderchuan/note.git`
                         * ssh登录用户名:git 
                         * 主机地址:github.com  
@@ -208,6 +207,7 @@
                         * 仓库文件夹:git帐号用户名/仓库名.git，如`coderchuan/note.git`
                 * host：远程主机地址
                 * port：远程主机端口，默认为22 
+                * SSH_CONFIG_HOST_NAME：`ssh`配置文件`~/.ssh/config`中配置的`Host`项的值
                 * git_dir_path：远程仓库文件夹的路径
                 * 示例：
                     ```
@@ -224,7 +224,12 @@
                         未配置ssh的config文件
                         github仓库文件夹相对路径：~/test_git
                     ```
-            * HTTPS：`https://www.github.com[:port]/git_dir_path`
+            * HTTPS：
+                * 形式：`https://domain[:port]/git_dir_path`
+                * domain：主机域名或IP地址
+                * port：远程主机端口，默认为80
+                * git_dir_path：远程仓库文件夹的路径
+                * 示例：`https://www.github.com/git_dir_path`
 * 重命名远程仓库
     * 语法
         ```
