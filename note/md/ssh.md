@@ -289,7 +289,7 @@
         * `g`：将`LOCAL_ADDRESS`的默认值指定为`全零地址`
         * `C`：压缩数据传输 
     * 远程转发
-        * 语法：`ssh -[C][g][[f]N]L [REMOTE_ADDRESS:]REMOTE_PORT:AIM_ADDRESS:AIM_PORT {[username@]host[:port]|SSH_CONFIG_HOST_NAME`
+        * 语法：`ssh [-o TCPKeepAlive=yes] -[C][g][[f]N]R [REMOTE_ADDRESS:]REMOTE_PORT:AIM_ADDRESS:AIM_PORT {[username@]host[:port]|SSH_CONFIG_HOST_NAME`
         * 含义：在`host`主机建立隧道，此隧道把`host`主机与本机联通，所有对`host`主机的`REMOTE_ADDRESS:REMOTE_PORT`访问都将由本机发起对`AIM_ADDRESS:AIM_PORT`的访问
         * `-o TCPKeepAlive=yes`：定时发送跳包以防止断连
         * `REMOTE_ADDRESS`：将要与服务器绑定的远程IP地址，ipv6地址需要在两端加`[`和`]`，此IP必须在host主机中，默认值为全零地址。此值必须在host主机中的`/etc/ssh/sshd_config`文件中设置`GatewayPorts yes`才会生效否则会将此值替换为远程回环地址。
@@ -302,6 +302,19 @@
         * `SSH_CONFIG_HOST_NAME`：`ssh`配置文件`~/.ssh/config`中配置的`Host`项的值 
         * `f`：后台启用，和`N`一起使用以在后台启用隧道
         * `N`：不打开远程shell
-        * `g`：将`LOCAL_ADDRESS`的默认值指定为`全零地址`
+        * `g`：将`REMOTE_ADDRESS`的默认值指定为`全零地址`
         * `C`：压缩数据传输 
     * 动态转发
+        * 语法：`ssh [-o TCPKeepAlive=yes] -[C][g][[f]N]D [LOCAL_ADDRESS:]LOCAL_PORT {[username@]host[:port]|SSH_CONFIG_HOST_NAME`
+        * 含义：在本机建立隧道(`socks5或socks4`代理，代理服务器的地址为`LOCAL_ADDRESS:LOCAL_PORT`)，转发所有的端口请求，所有对`LOCAL_ADDRESS:LOCAL_PORT`的代理访问都将由中介主机`host`发起对目标地址的访问。
+        * `-o TCPKeepAlive=yes`：定时发送跳包以防止断连
+        * `LOCAL_ADDRESS`：本机代理地址，ipv6地址需要在两端加`[`和`]`。默认为回环地址
+        * `LOCAL_PORT`：本机代理端口
+        * `username`：ssh登录用户名，如果转发成功，则相当于此用户访问被转发的访问内容。如果不指定则默认为本地当前的用户名
+        * `host`：ssh登录的主机地址
+        * `port`：ssh登录端口。默认为22
+        * `SSH_CONFIG_HOST_NAME`：`ssh`配置文件`~/.ssh/config`中配置的`Host`项的值 
+        * `f`：后台启用，和`N`一起使用以在后台启用隧道
+        * `N`：不打开远程shell
+        * `g`：将`LOCAL_ADDRESS`的默认值指定为`全零地址`
+        * `C`：压缩数据传输 
