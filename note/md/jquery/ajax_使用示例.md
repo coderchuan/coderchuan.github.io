@@ -8,7 +8,7 @@
                 url:"./test7.php",
                 data:{"test":"测试"},
                 async:true,
-                dataType:"html",
+                dataType:"json",
                 success:function(received) 
                 {
                     console.log(received);
@@ -29,6 +29,7 @@
                     cache:false,
                     processData:false,
                     contentType:false,
+                    dataType:"json",
                     success:function(received){
                         console.log(received);
                     }
