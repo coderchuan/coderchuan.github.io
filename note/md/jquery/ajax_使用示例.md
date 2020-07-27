@@ -53,3 +53,19 @@
         "html"
     );
     ```
+
+## 输出FormData数据 
+```js
+var form_data=new FormData();
+form_data.append("name","张三");
+for (var key_value of form_data.values()) {
+    console.log(key_value);
+}
+```
+```js
+var form_data=new FormData();
+form_data.append("name","张三");
+for (var [key,value] of form_data.entries()) {
+    console.log([key,value]);
+} 
+```
