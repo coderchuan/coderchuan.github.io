@@ -540,6 +540,21 @@
             * `BRANCH_NAME`：同"切换分支"中的"BRANCH_NAME";
             * `FILE_OR_DIR_NAME`：指定分支的文件(夹)。用于覆盖当前分支的工作区并追踪此文件(夹) 
 
+## 比较差异
+* 语法：
+    ```
+    git {diff|difftool} COMMENT_ID1:FILE1  COMMENT_ID2:FILE2 
+    git {diff|difftool} FILE1  FILE2
+    git {diff|difftool} FILE3
+    ```
+* 功能：比较文件差异
+* 解释  
+    * `COMMENT_ID1`：提交版本1
+    * `COMMENT_ID2`：提交版本2
+    * `FILE1`：比较任意两个文件的差异，第一个文件
+    * `FILE2`：比较任意两个文件的差异，第二个文件。如果比较两个文件在不同的版本中的差异，`FILE2`应与`FILE1`相同 
+    * `FILE3`：比较此文件与上一个已提交版本(HEAD)的差异
+
 ## 清理
 * 语法
     ```
