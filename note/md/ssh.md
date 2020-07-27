@@ -324,4 +324,4 @@
     1. 设置->网络和Internet->代理->手动设置代理
     1. 地址中填写`http://socks=HOST`，其中`HOST`表示代理地址。例：`http://socks=192.168.1.4`
     1. 端口中填写代理地址的端口。例：`9009`
-* curl：详见：[curl的socks5的用法](./linux/wget_curl.md)
+* curl：详见：[curl的socks5的用法](./linux/wget_curl)
