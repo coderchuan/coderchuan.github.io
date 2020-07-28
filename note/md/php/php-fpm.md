@@ -7,7 +7,7 @@
 
 ## www.conf
 * `[www]`配置
-    * `user = USERNAME`：非必须。错误级别。ERROE_LEVE表示错误级别,可取以下值：alert, error, warning, notice, debug, 错误级别依次降低。默认为：notice
+    * `user = USERNAME`：必须。运行php-fpm服务进程的用户。
         * `USERNAME`：用户名 
     * `group = GROUPNAME`：非必须。运行php-fpm服务进程的所属用户组。不设置时默认为user所在的用户组
         * `GROUPNAME`：组名
