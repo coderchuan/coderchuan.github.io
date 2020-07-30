@@ -16,3 +16,4 @@
 1. [wsl](/note/md/wsl)
 1. [yii2](/note/md/yii2/index)
 1. [五笔](/note/md/五笔)
+1. [数理](/note/md/数理)
