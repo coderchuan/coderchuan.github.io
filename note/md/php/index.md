@@ -6,3 +6,4 @@
 1. [命名规范](/note/md/php/命名规范)
 1. [插件](/note/md/php/插件)
 1. [数据类型](/note/md/php/数据类型)
+1. [魔术方法](/note/md/php/魔术方法)
