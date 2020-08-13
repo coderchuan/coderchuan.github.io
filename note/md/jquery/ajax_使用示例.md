@@ -56,13 +56,15 @@
 
 ## 输出FormData数据 
 ```js
+//仅输出值
 var form_data=new FormData();
 form_data.append("name","张三");
-for (var key_value of form_data.values()) {
-    console.log(key_value);
+for (var value of form_data.values()) {
+    console.log(value);
 }
 ```
 ```js
+//输出键名与值
 var form_data=new FormData();
 form_data.append("name","张三");
 for (var [key,value] of form_data.entries()) {
