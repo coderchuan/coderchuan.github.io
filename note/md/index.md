@@ -16,5 +16,7 @@
 1. [windows_terminal](/note/md/windows_terminal)
 1. [wsl](/note/md/wsl)
 1. [yii2](/note/md/yii2/index)
+1. [中华字经](/note/md/中华字经)
 1. [五笔](/note/md/五笔)
+1. [命名规则](/note/md/命名规则)
 1. [数理](/note/md/数理)
