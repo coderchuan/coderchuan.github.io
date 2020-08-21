@@ -11,8 +11,8 @@
      */
     ```
 * 解释
-    * `FUNCTION_EXPLAIN_TEXT`:功能说明
-    * `KEY_EXPLAIN_TEXT`:对关键字所代表的内容的说明。内容说明详见各个`KEY_NAME`格式说明
+    * `FUNCTION_EXPLAIN_TEXT`:功能说明，若要包含无序列表，可使用`中横杠(-)`作为新条目的起始并空一格再书写条目内容
+    * `KEY_EXPLAIN_TEXT`:对关键字所代表的内容的说明。内容说明详见各个`KEY_NAME`格式说明。
     * `KEY_NAME`:关键字，包括以下值
         * @author：作者
             * 格式：`姓名 [邮箱]`
