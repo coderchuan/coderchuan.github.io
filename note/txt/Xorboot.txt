@@ -32,7 +32,7 @@ BIOS主板：
 
 启动菜单类型：
 MBR、PBR类型：直接运行指定分区的文件，文件默认为NTLDR(WindowsVista之前的系统)或BOOTMGR(WindowsVista及其之后的系统)，不能手动指定；
-文件类型：直接从指定的文件启动，如NTLDR、BOOTMGR、简单的IOS镜像等；
+文件类型：直接从指定的文件启动，如NTLDR、BOOTMGR、简单的ISO镜像等；
 特别地：Xorboot_BIOS不能引导VHD(X)、WIM，但是可以配合“BOOTMGR修改工具”和“BOOTICE.exe”来实现引导VHD(X)、WIM。
 
 部署方式：
