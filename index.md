@@ -14,6 +14,7 @@
 1. [termux](/note/md/termux)
 1. [windows_command](/note/md/windows_command)
 1. [windows_terminal](/note/md/windows_terminal)
+1. [windows系统安装](/note/md/windows系统安装)
 1. [wsl](/note/md/wsl)
 1. [yii2](/note/md/yii2/index)
 1. [中华字经](/note/md/中华字经)
