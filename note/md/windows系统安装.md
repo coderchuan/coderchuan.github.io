@@ -8,7 +8,7 @@
     * diskgenius绿色版软件 
     * dism++
     * xorboot_0.2.2
-    * bcdice
+    * bootice
 * 将要安装系统的硬盘(建议空闲空间大于等于`30GB`)，以下称为`目标硬盘`。
 
 ## 安装步骤
