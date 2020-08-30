@@ -32,6 +32,8 @@
             * tabTitle：标题栏名称，内容使用`""`包裹
             * suppressApplicationTitle：标题名称不被应用程序改变，false：可以被改变，true：不能被改变
             * commandline：当菜单栏中的名称被点击时要执行的`powershell`命令，命令使用`""`包裹 
+            * startingDirectory：启动时的目录。如果是在wsl中，则wsl的根目录表示为`//wsl$/WSL_NAME/`。其中`WSL_NAME`表示发行版名称，如`Ubuntu-20.04`，在命令提示符中执行`wsl -l --all`可以查看所有的发行版名称
+    1. 配置`defaultProfile`项为`profiles->list`中某项的`guid`作为默认启动项 
 * 快捷方式
     * 分屏：`shift + alt + d`
     * 关闭有焦点的窗口：`ctrl + shift + w`
