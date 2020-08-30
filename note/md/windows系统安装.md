@@ -7,8 +7,8 @@
     * windows10系统镜像
     * diskgenius绿色版软件 
     * dism++
-    * xorboot_0.2.5
-    * bcdice
+    * xorboot_0.25
+    * bootice
 * 硬盘要求(建议空闲空间大于等于`30GB`)，以下称为`目标硬盘`。可任选其一
     * 实体硬盘
     * 虚拟硬盘`VHD、VHDX`
@@ -60,7 +60,7 @@
         1. 在标题为`建立新分区`的窗口中选择文件系统类型`EFI system partition`分区大小自已定义，点击确定
         1. 点击左上角`保存更改`，并确定保存
         1. 立即格式化选择`是`
-1. 创建`NTFS`分区。建议大于`29GB`
+1. 创建`NTFS`分区。建议大于等于`29GB`
     * 使用`diskpart`命令行工具创建
         1. `list disk`，记下目标磁盘编号`N`
         1. `select disk N`，其中`N`为目标磁盘编号
