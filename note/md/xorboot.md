@@ -3,7 +3,7 @@
     * 计算机主板关闭安全启动 
     * 启动分区所在磁盘分区表格式为：GPT
     * 启动分区为标准的EFI分区格式 
-        * 分区GUID：参见[分区类型GUID EFI分区](./windows_command)
+        * 分区GUID：参见[GPT EFI分区类型GUID](./gpt分区)
         * 卷格式：fat32/fat16
 * 工作文件(夹)
     * 引导程序
