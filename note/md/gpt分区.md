@@ -1,4 +1,4 @@
-# PGT分区
+# GPT分区
 
 ## GUID
 * 设置`GPT`磁盘分区的`分区类型GUID`
