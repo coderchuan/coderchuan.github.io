@@ -1,4 +1,6 @@
-## PGT分区GUID 
+# PGT分区
+
+## GUID
 * 设置`GPT`磁盘分区的`分区类型GUID`
     1. 使用快捷键`Win+R`,运行`diskpart`命令
     1. 列出磁盘`list disk`
