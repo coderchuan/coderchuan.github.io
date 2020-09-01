@@ -2,7 +2,7 @@
 1. [aida64](/note/md/aida64)
 1. [composer](/note/md/composer)
 1. [git](/note/md/git/index)
-1. [gpt分区guid](/note/md/gpt分区guid)
+1. [gpt分区](/note/md/gpt分区)
 1. [html](/note/md/html/index)
 1. [ip地址](/note/md/ip地址)
 1. [javascript](/note/md/javascript/index)
