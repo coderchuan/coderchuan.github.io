@@ -200,6 +200,7 @@
         * `ALIAS`：远程仓库在本地的别名，可自定义
         * `URL`：远程仓库地址，支持多种协议，如：   
             * SSH
+                * 如果需要配置ssh免密登录，请查看[配置ssh客户端](../ssh)
                 * 完整形式：`ssh://{[username@]host[:port]|SSH_CONFIG_HOST_NAME}/git_dir_path`
                 * 简化形式：`username@host:git_dir_path`，仅适用于22端口
                 * username：远程主机的用户名。如果不指定则默认为本地当前的用户名
