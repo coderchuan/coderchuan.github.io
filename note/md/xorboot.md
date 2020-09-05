@@ -5,6 +5,7 @@
     * 启动分区为标准的EFI分区格式 
         * 分区GUID：参见[GPT EFI分区类型GUID](./gpt分区)
         * 卷格式：fat32/fat16
+    * xorboot版本：0.2.5 2019.04.13
 * 工作文件(夹)
     * 引导程序
         * 文件位置：`启动分区\EFI\BOOT\BOOTX64.EFI`
