@@ -1,6 +1,6 @@
 ## php
-1. [phpdoc](/note/md/php/phpdoc)
 1. [php-fpm](/note/md/php/php-fpm)
+1. [phpdoc](/note/md/php/phpdoc)
 1. [函数](/note/md/php/函数/index)
 1. [包含引入](/note/md/php/包含引入)
 1. [命令行交互](/note/md/php/命令行交互)

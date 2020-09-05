@@ -25,7 +25,7 @@
                 }
             ]
             ```
-        * 参数
+        * 属性(属性名应使用string形式)
             * guid：string.由32位十六进制字符组成，使用`-`分隔，使用`{}`包裹。分隔规则为`8位-4位-4位-4位-12位`
             * hidden：bool.是否隐藏在菜单中，false：不隐藏，true：隐藏
             * name：string.菜单栏中的名称
@@ -33,6 +33,7 @@
             * suppressApplicationTitle：bool.标题名称不被应用程序改变，false：可以被改变，true：不能被改变
             * commandline：string.当菜单栏中的名称被点击时要执行的`powershell`命令
             * startingDirectory：string.启动时的目录。如果是在wsl中，则wsl的根目录表示为`//wsl$/WSL_NAME/`。其中`WSL_NAME`表示发行版名称，如`Ubuntu-20.04`，在命令提示符中执行`wsl -l --all`可以查看所有的发行版名称
+            * icon：string.图标路径
     1. 配置`defaultProfile`项为`profiles->list`中某项的`guid`作为默认启动项 
 * 快捷方式
     * 分屏：`shift + alt + d`
