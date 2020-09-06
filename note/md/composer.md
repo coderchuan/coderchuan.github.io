@@ -12,12 +12,12 @@
         ```
         curl -sS https://getcomposer.org/installer | php
         ```
-    * 第二步，添加到环境变量 
+    * 第二步，添加到环境变量，以下两种方式任选其一
         * `ubuntu、debian、centos`
             ```
             mv composer.phar /usr/local/bin/composer
             ```
-        * 通用。添加到`/etc/profile`，详见`linux.md`中环境变量相关内容
+        * 通用。添加到`/etc/profile`，详见[环境变量](./linux/终端配置)中环境变量相关内容
 * windows
     * 下载并安装：`https://getcomposer.org/Composer-Setup.exe`
 
