@@ -18,7 +18,7 @@
 1. [windows_command](/note/md/windows_command)
 1. [windows_terminal](/note/md/windows_terminal)
 1. [windows_系统安装](/note/md/windows_系统安装)
-1. [wsl](/note/md/wsl)
+1. [wondows_wsl](/note/md/wondows_wsl)
 1. [xorboot](/note/md/xorboot)
 1. [yii2](/note/md/yii2/index)
 1. [中华字经](/note/md/中华字经)

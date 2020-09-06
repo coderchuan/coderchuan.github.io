@@ -222,12 +222,10 @@
     * 其他参数：
         * `autoindex_exact_size {(on)|off}`
             * 功能：开启/关闭显示文件的确切大小 
-            * 使用位置：http,server,location 
         * `autoindex_format {(off)|on}` 
             * 功能：关闭/开启以服务器系统设置时区显示时间
             * `off`：使用GTM时间
             * `on`：使用服务器系统设置时区显示时间
-            * 使用位置：http,server,location 
     * 使用位置：http,server,location 
 * `types MIME_TYPES`
     * 功能：文件扩展名与文件类型映射表,通常使用include包含mime.types文件来替换此项配置。MIME_TYPES表示配置块，参见使用位置：types
@@ -263,7 +261,7 @@
     * `FILE`：表示文件的路径，如` /etc/nginx/modules-enabled/*.conf `
 * ` error_log FILE {debug|info|notice|warn|(error)|crit|alert|emerg} `
     * 功能：错误日志,严重程度依次递增,输出的信息量依次递减。子配置优先于全局配置。
-    * 使用位置：main,http,server,location
+    * 使用位置：nginx.conf,http,server,location
     * FILE：表示文件的路径,如:/home/ubuntu/LOG/nginx/error.log 
 * ` access_log {off|LOG_FILE [LOG_FORMAT]} `
     * 功能：访问日志。内部重定向只记录最后一次访问
@@ -278,7 +276,7 @@
     * 使用位置：server,location,if
     * PATTERN：对$uri进行正则匹配的正则表达式
     * NEW_URL_OR_URI：要替换的URI或URL
-        * 如果此值以http://或https://开头,则进行外部重定向
+        * 如果此值以` http:// `或` https:// `开头,则进行外部重定向
     * flag：重定向选项,当不写flag参数时,依次尝试以下参数,直到执行成功或全部尝试结束。此参数可取以下值:
         * break：终止location中剩下的语句，直接使用NEW_URL_OR_URI资源，若NEW_URL_OR_URI不存在，则直接返回404  
         * last：内部重定向。使用NEW_URL_OR_URI在nginx内部发起请求
