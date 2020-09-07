@@ -15,7 +15,7 @@
     1. 在管理员命令提示符中输入命令`dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`并执行完成
     1. 重启计算机
     1. 在管理员命令提示符中输入命令`wsl --set-default-version 2`并执行
-        * 若执行失败则下载`https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi`(此文件已经下载到`数据仓储`中，亦可直接使用)并安装，然后再重新执行当前步骤命令
+        * 若执行失败则[下载升级文件](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)(此文件已经下载到`数据仓储`中，亦可直接使用)并安装，然后再重新执行当前步骤命令
     1. 回到第一步
 * 常见问题
     * 在`WSL1`版本中`Ubuntu-20.04`的`sleep`模块异常，升级`WSL1`到`WSL2`即可解决
