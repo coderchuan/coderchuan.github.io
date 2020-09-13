@@ -485,7 +485,7 @@
     * 语法
         * 查看分支
             ```
-            git branch [-r] [-a] 
+            git branch [-a|-v|-r]
             ```
         * 删除分支
             ```
@@ -514,8 +514,9 @@
             ```
     * 解释
         * 无参数：查看当前仓库下的本地分支
-        * `-r`：查看当前仓库下的远程分支
         * `-a`：查看当前仓库下的所有分支
+        * `-r`：查看当前仓库下的远程分支
+        * `-v`：查看当前仓库下的本地分支和分支id
         * `CRE_BRANCH_NAME`：创建新分支的新分支名称
         * `-d`：删除分支选项
         * `-D`：强制删除分支选项
@@ -538,7 +539,7 @@
     * 使用其他分支文件覆盖当前分支文件(夹)，可用于恢复被删除的文件
         * 语法
             ```
-            git checkout [BRANCH_NAME] FILE_OR_DIR_NAME
+            git checkout [BRANCH_NAME] -- FILE_OR_DIR_NAME
             ```
         * 解释
             * `BRANCH_NAME`：同"切换分支"中的"BRANCH_NAME";
