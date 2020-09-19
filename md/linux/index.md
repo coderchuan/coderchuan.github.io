@@ -1,0 +1,9 @@
+## linux
+1. [wget_curl](/note/md/linux/wget_curl)
+1. [区域与时间](/note/md/linux/区域与时间)
+1. [常用命令](/note/md/linux/常用命令)
+1. [终端配置](/note/md/linux/终端配置)
+1. [自启动](/note/md/linux/自启动)
+1. [计划任务](/note/md/linux/计划任务)
+1. [软件安装与软件](/note/md/linux/软件安装与软件)
+1. [运行级别](/note/md/linux/运行级别)
