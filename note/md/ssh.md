@@ -12,11 +12,11 @@
         * 设置->应用->应用和功能->可选功能(如果可选功能下有OpenSSH服务器,则已经安装,无需操作后继步骤)->添加功能->OpenSSH服务器->安装 
 * 安装客户端
     * ubuntu      
-        ` sudo apt install openssh-server `
+        ` sudo apt install openssh-client `
     * debian     
-        ` sudo apt install openssh-server `
+        ` sudo apt install openssh-client `
     * centos      
-        ` sudo yum install openssh-server `
+        ` sudo yum install openssh-client `
     * windows     
         * 设置->应用->应用和功能->可选功能(如果可选功能下有OpenSSH客户端,则已经安装,无需操作后继步骤)->添加功能->OpenSSH客户端->安装 
 
