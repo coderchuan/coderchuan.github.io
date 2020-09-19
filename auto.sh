@@ -5,10 +5,10 @@ work_path=$(dirname $(readlink -f $0))
 md_path_theory="${work_path}/md/知识"
 md_path_practice="${work_path}/md/实践"
 
-index_file_theory="${work_path}/html/index_theory.md"
-index_file_practice="${work_path}/html/index_practice.md"
-index="${work_path}/html/index.md"
-base_url="index.html?title=";
+index_file_theory="${work_path}/index/index_theory.md"
+index_file_practice="${work_path}/index/index_practice.md"
+index="${work_path}/index/index.md"
+base_url="./index.html?title=";
 
 function createIndex(){
     local files=$(ls $1)
