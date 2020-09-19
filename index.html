@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8"/>
     <title id='title'>我的笔记</title>
-    <script src="./js/marked.js"></script>
+    <script src="./html/js/marked.js"></script>
 </head>
 <body>
     <div id="content">
@@ -20,14 +20,14 @@
     var title="";
     if(result && result.length>0){
         var title_str=result[1];
-        url="../"+title_str+".md";
+        url="./"+title_str+".md";
         result=title_str.match(/([^\/]+)$/);
         if(result && result.length>0){
             title=result[1];
         }
         get(url,title);
     }else{
-        url="./index.md";
+        url="./html/index.md";
         title="我的笔记";
         get(url,title);
     }
