@@ -3,7 +3,7 @@
 ## 安装termux
 * 官方网站：`https://termux.com/` -> `GET IT ON F-Droid` -> `下载APK`
 
-## 推荐软件(软件管理工具pkg，详见[软件安装](/note/linux/软件安装与软件))
+## 推荐软件(软件管理工具pkg，详见[软件安装](index.html?title=/md/知识/linux/软件安装与软件))
 * openssh：远程连接工具
     * termux为单用户系统，连接ssh时可以不指定用户名，若指定了用户名则会忽略该用户名 
 

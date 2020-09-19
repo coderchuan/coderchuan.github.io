@@ -19,7 +19,7 @@
             ```
             mv composer.phar /usr/local/bin/composer
             ```
-        * 通用。添加到`/etc/profile`，详见[环境变量](./linux/终端配置)中环境变量相关内容
+        * 通用。添加到`/etc/profile`，详见[环境变量](index.html?title=/md/知识/linux/终端配置)中环境变量相关内容
 * windows
     * 下载并安装：`https://getcomposer.org/Composer-Setup.exe`
 
