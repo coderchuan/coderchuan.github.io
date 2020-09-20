@@ -6,7 +6,7 @@
 </head>
 <body>
     <div id="content">
-
+        加载中...
     </div>
 </body>
 </html>
@@ -27,20 +27,22 @@
         }
         get(url,title);
     }else{
-        url="./index/index.md";
+        url="./index/index.md"+"?random="+parseInt(Math.random()*100000);
         title="我的笔记";
         get(url,title);
     }
-    function get(url,title) {
-        var md_to_html="";
+    function get(url,title) 
+    {
         if(url!==''){
             var req = new XMLHttpRequest();
-            req.open('GET', url, false);
+            req.open('GET', url, true);
+            req.onloadend = function() {
+                var md_to_html=marked(req.responseText);
+                document.getElementById('title').text =decodeURI(title);
+                document.getElementById('content').innerHTML=md_to_html;
+            };
             req.send(null);
-            md_to_html=marked(req.responseText);
         }
-        document.getElementById('title').text =decodeURI(title);
-        document.getElementById('content').innerHTML = md_to_html;
     }
 </script>
 
