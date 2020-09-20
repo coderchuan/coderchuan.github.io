@@ -599,3 +599,11 @@ git config --local user.email 'mymessagebox@126.com'
 git config --local credential.helper ""
 git remote add origin SSH_URL 
 ```
+
+## 命令行中正常显示中文
+```
+git config --global core.quotepath false
+git config --global gui.encoding utf-8
+git config --global i18n.commit.encoding utf-8
+git config --global i18n.logoutputencoding utf-8
+```
