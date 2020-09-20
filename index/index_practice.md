@@ -4,13 +4,13 @@
 1. js
     * [空值判断](./index.html?title=/md/实践/js/空值判断)
     * [表头浮动](./index.html?title=/md/实践/js/表头浮动)
-1. lnmp
+1. lnmp配置
     * nginx
-        * [server配置](./index.html?title=/md/实践/lnmp/nginx/server配置)
-        * [用户配置](./index.html?title=/md/实践/lnmp/nginx/用户配置)
+        * [server配置](./index.html?title=/md/实践/lnmp配置/nginx/server配置)
+        * [用户配置](./index.html?title=/md/实践/lnmp配置/nginx/用户配置)
     * php-fpm
-        * [与nginx的通信接口配置](./index.html?title=/md/实践/lnmp/php-fpm/与nginx的通信接口配置)
-        * [用户配置](./index.html?title=/md/实践/lnmp/php-fpm/用户配置)
+        * [与nginx的通信接口配置](./index.html?title=/md/实践/lnmp配置/php-fpm/与nginx的通信接口配置)
+        * [用户配置](./index.html?title=/md/实践/lnmp配置/php-fpm/用户配置)
 1. php
     * [excel操作](./index.html?title=/md/实践/php/excel操作)
     * [mysql原生连接与查询](./index.html?title=/md/实践/php/mysql原生连接与查询)
