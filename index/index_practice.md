@@ -1,1 +1,12 @@
 ## 实践
+1. css
+    * [滚动条重绘](./index.html?title=/md/实践/css/滚动条重绘)
+1. js
+    * [空值判断](./index.html?title=/md/实践/js/空值判断)
+    * [表头浮动](./index.html?title=/md/实践/js/表头浮动)
+1. php
+    * [excel操作](./index.html?title=/md/实践/php/excel操作)
+    * [mysql原生连接与查询](./index.html?title=/md/实践/php/mysql原生连接与查询)
+    * [发送请求](./index.html?title=/md/实践/php/发送请求)
+    * [获取请求数据](./index.html?title=/md/实践/php/获取请求数据)
+    * [阿拉伯数字转中文人民币大写](./index.html?title=/md/实践/php/阿拉伯数字转中文人民币大写)
