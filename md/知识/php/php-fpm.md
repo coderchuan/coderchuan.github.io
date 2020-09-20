@@ -38,15 +38,3 @@
     * `request_slowlog_timeout = NUM`：非必须。当php脚本执行时间超过NUM秒后记录慢日志。NUM取0表示关闭慢日志，默认为0
     * `pm.max_requests = NUM`：非必须。当请求次数超过NUM次后重启php-fpm服务。NUM取0表示不自动重启，默认为0
     * `slowlog = LOG_SLOW_FILE_PATH`：如果request_slowlog_timeout开启，则此项必须配置。慢日志文件路径。 
-
-## 配置示例(`www.conf`文件中替换(无则创建)以下选项)
-* 使用TCP/IP
-    ```conf
-    listen = localhost:9008
-    ```
-* 使用unix_socket
-    ```conf
-    listen = /tmp/php-fpm.sock
-    ;listen.owner应与使用`/tmp/php-fpm.sock`的进程为同一个用户
-    listen.owner = www-data
-    ```
