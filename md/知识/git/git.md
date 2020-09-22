@@ -591,15 +591,6 @@
     * `#`：`\#`
 * 模板。使用已经定义好的模板，无须自定义规则，详见[gitignore模板](https://github.com/github/gitignore)
 
-## 常用初始配置(其中SSH_URL表示远程ssh地址) 
-```
-git init 
-git config --local user.name 'coderchuan'
-git config --local user.email 'mymessagebox@126.com'
-git config --local credential.helper ""
-git remote add origin SSH_URL 
-```
-
 ## 命令行中正常显示中文
 ```
 git config --global core.quotepath false
