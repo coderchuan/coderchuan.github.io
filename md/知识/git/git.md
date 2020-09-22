@@ -55,7 +55,7 @@
 * 配置用户属性参数 
     * 语法
         ```
-        git config ENV ATTRIBUTE_NAME ATTRIBUTE_VALUE
+        git config ENV [ATTRIBUTE_NAME ATTRIBUTE_VALUE | -e] 
         ```
     * 解释
         * `ENV`：用户环境配置，可取的值如下：
@@ -74,6 +74,7 @@
                 * manager：使用Windows系统凭据管理密码。示例：`git config --local credential.helper "manager"`
                 * cache：使用Linux系统凭据管理密码。示例：`git config --local credential.helper "cache"`
         * `ATTRIBUTE_VALUE`，属性值，详见`ATTRIBUTE_NAME`中对属性值类型的要求
+        * `-e`，打开文本编辑器进行手动编辑
 * 显示用户属性参数
     * 语法
         ```        
