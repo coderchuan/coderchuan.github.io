@@ -2,8 +2,8 @@
 1. [aida64](./index.html?title=/md/知识/aida64)
 1. [composer](./index.html?title=/md/知识/composer)
 1. git
-    * [git](./index.html?title=/md/知识/git/git)
     * [github_pages](./index.html?title=/md/知识/git/github_pages)
+    * [git](./index.html?title=/md/知识/git/git)
 1. [gpt分区](./index.html?title=/md/知识/gpt分区)
 1. html
     * [属性](./index.html?title=/md/知识/html/属性)
@@ -27,8 +27,8 @@
 1. photoshop
     * [证照尺寸](./index.html?title=/md/知识/photoshop/证照尺寸)
 1. php
-    * [php-fpm](./index.html?title=/md/知识/php/php-fpm)
     * [phpdoc](./index.html?title=/md/知识/php/phpdoc)
+    * [php-fpm](./index.html?title=/md/知识/php/php-fpm)
     * [xdebug](./index.html?title=/md/知识/php/xdebug)
     * 函数
         * 时间与日期
