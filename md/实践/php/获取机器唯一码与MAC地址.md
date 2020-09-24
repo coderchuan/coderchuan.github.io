@@ -25,7 +25,7 @@ function getMachineUuid()
     exec($command,$a);
     $mac=array();
     foreach($a as $v){
-        if(preg_match("/([0-9A-F\-:]{17})/ui",$v,$res)){
+        if(preg_match("/([0-9A-F\\-:]{17})/ui",$v,$res)){
             $mac[]=strtolower($res[1]);
         }
     }
