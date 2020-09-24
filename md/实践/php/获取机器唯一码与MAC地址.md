@@ -1,6 +1,5 @@
 ## 获取机器唯一码与MAC地址
 ```
-<?php 
 /**
  * 获取mac地址和唯一机器码。仅适用于linux或windows
  * @return array 数组内容如下 
@@ -38,5 +37,4 @@ function getMachineUuid()
     $retMsg['uuid']=md5(implode("",$mac));
     return $retMsg;
 }
-?>
 ```
