@@ -1,3 +1,5 @@
+## 获取机器唯一码与MAC地址
+```
 <?php 
 /**
  * 获取mac地址和唯一机器码。仅适用于linux或windows
@@ -37,3 +39,4 @@ function getMachineUuid()
     return $retMsg;
 }
 ?>
+```
