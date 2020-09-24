@@ -29,7 +29,7 @@ function getMachineUuid()
             $mac[]=strtolower($res[1]);
         }
     }
-    $mac=array_unique($mac);
+    $mac=array_values(array_unique($mac));
     $mac=preg_replace("{-}",":",$mac);
 
     $retMsg['code']=0;
