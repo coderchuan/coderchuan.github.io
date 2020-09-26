@@ -10,9 +10,8 @@ function createIndex(){
     local files=$(ls $1)
     local index_file=$2
     local level=0;
-    local title=$(echo $1 | grep -oP "(?<=/md/).+")
     if [ "$3" == "" ];then
-        echo "## $title" > $index_file 
+        echo "## 我的笔记" > $index_file 
     else level=`expr $3 + 1`;
     fi 
 
