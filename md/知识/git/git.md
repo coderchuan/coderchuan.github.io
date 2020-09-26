@@ -55,7 +55,7 @@
 * 配置用户属性参数 
     * 语法
         ```
-        git config ENV ATTRIBUTE_NAME ATTRIBUTE_VALUE
+        git config ENV [ATTRIBUTE_NAME ATTRIBUTE_VALUE | -e] 
         ```
     * 解释
         * `ENV`：用户环境配置，可取的值如下：
@@ -74,6 +74,7 @@
                 * manager：使用Windows系统凭据管理密码。示例：`git config --local credential.helper "manager"`
                 * cache：使用Linux系统凭据管理密码。示例：`git config --local credential.helper "cache"`
         * `ATTRIBUTE_VALUE`，属性值，详见`ATTRIBUTE_NAME`中对属性值类型的要求
+        * `-e`，打开文本编辑器进行手动编辑
 * 显示用户属性参数
     * 语法
         ```        
@@ -590,15 +591,6 @@
     * 空格：`\空格`
     * `#`：`\#`
 * 模板。使用已经定义好的模板，无须自定义规则，详见[gitignore模板](https://github.com/github/gitignore)
-
-## 常用初始配置(其中SSH_URL表示远程ssh地址) 
-```
-git init 
-git config --local user.name 'coderchuan'
-git config --local user.email 'mymessagebox@126.com'
-git config --local credential.helper ""
-git remote add origin SSH_URL 
-```
 
 ## 命令行中正常显示中文
 ```
