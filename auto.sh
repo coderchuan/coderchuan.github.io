@@ -1,7 +1,7 @@
 #!/bin/bash
 
 work_path=$(dirname $(readlink -f $0))
-md_path="${work_path}/md/"
+md_path="${work_path}/md"
 
 index_file="${work_path}/index/index.md"
 base_url="./index.html?title=";
