@@ -3,7 +3,7 @@
     * 计算机主板关闭安全启动 
     * 启动分区所在磁盘分区表格式为：GPT
     * 启动分区为标准的EFI分区格式 
-        * 分区GUID：参见[GPT EFI分区类型GUID](index.html?title=/md/知识/gpt分区)
+        * 分区GUID：参见[GPT EFI分区类型GUID](index.html?title=/md/gpt分区)
         * 卷格式：fat32/fat16
     * xorboot版本：0.2.5 2019.04.13
 * 工作文件(夹)

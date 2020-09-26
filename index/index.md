@@ -1,3 +1,91 @@
-## 我的笔记
-* [实践](./index.html?title=/index/index_practice)
-* [知识](./index.html?title=/index/index_theory)
+## 
+1. [aida64](./index.html?title=/md//aida64)
+1. [composer](./index.html?title=/md//composer)
+1. css
+    * [滚动条重绘](./index.html?title=/md//css/滚动条重绘)
+1. [git](./index.html?title=/md//git)
+1. [github_pages](./index.html?title=/md//github_pages)
+1. [gpt分区](./index.html?title=/md//gpt分区)
+1. html
+    * [属性](./index.html?title=/md//html/属性)
+1. [ip地址](./index.html?title=/md//ip地址)
+1. jquery
+    * [ajax](./index.html?title=/md//jquery/ajax)
+1. js
+    * [空值判断](./index.html?title=/md//js/空值判断)
+    * [表头浮动](./index.html?title=/md//js/表头浮动)
+1. linux
+    * [wget_curl](./index.html?title=/md//linux/wget_curl)
+    * [区域与时间](./index.html?title=/md//linux/区域与时间)
+    * [常用命令](./index.html?title=/md//linux/常用命令)
+    * [管道与xargs](./index.html?title=/md//linux/管道与xargs)
+    * [终端配置](./index.html?title=/md//linux/终端配置)
+    * [自启动](./index.html?title=/md//linux/自启动)
+    * [计划任务](./index.html?title=/md//linux/计划任务)
+    * [软件安装与软件](./index.html?title=/md//linux/软件安装与软件)
+    * [运行级别](./index.html?title=/md//linux/运行级别)
+1. lnmp配置
+    * nginx
+        * [server配置](./index.html?title=/md//lnmp配置/nginx/server配置)
+        * [用户配置](./index.html?title=/md//lnmp配置/nginx/用户配置)
+    * php-fpm
+        * [与nginx的通信接口配置](./index.html?title=/md//lnmp配置/php-fpm/与nginx的通信接口配置)
+        * [用户配置](./index.html?title=/md//lnmp配置/php-fpm/用户配置)
+1. [markdown](./index.html?title=/md//markdown)
+1. [nginx](./index.html?title=/md//nginx)
+1. php
+    * 实用
+        * [excel操作](./index.html?title=/md//php/实用/excel操作)
+        * [发送请求](./index.html?title=/md//php/实用/发送请求)
+        * 数据库
+            * [数据库查询](./index.html?title=/md//php/实用/数据库/数据库查询)
+            * [数据库连接](./index.html?title=/md//php/实用/数据库/数据库连接)
+        * [获取机器唯一码与MAC地址](./index.html?title=/md//php/实用/获取机器唯一码与MAC地址)
+        * [获取请求数据](./index.html?title=/md//php/实用/获取请求数据)
+        * [阿拉伯数字转中文人民币大写](./index.html?title=/md//php/实用/阿拉伯数字转中文人民币大写)
+    * 文档
+        * [PDO数据库](./index.html?title=/md//php/文档/PDO数据库)
+        * [php-fpm](./index.html?title=/md//php/文档/php-fpm)
+        * [phpdoc](./index.html?title=/md//php/文档/phpdoc)
+        * [xdebug](./index.html?title=/md//php/文档/xdebug)
+        * 函数
+            * 时间与日期
+                * [date](./index.html?title=/md//php/文档/函数/时间与日期/date)
+                * [gmdate](./index.html?title=/md//php/文档/函数/时间与日期/gmdate)
+                * [strftime](./index.html?title=/md//php/文档/函数/时间与日期/strftime)
+                * [strtotime](./index.html?title=/md//php/文档/函数/时间与日期/strtotime)
+        * [包含引入](./index.html?title=/md//php/文档/包含引入)
+        * [命令行交互](./index.html?title=/md//php/文档/命令行交互)
+        * [命名空间](./index.html?title=/md//php/文档/命名空间)
+        * [命名规范](./index.html?title=/md//php/文档/命名规范)
+        * [插件](./index.html?title=/md//php/文档/插件)
+        * [数据类型](./index.html?title=/md//php/文档/数据类型)
+        * [魔术方法](./index.html?title=/md//php/文档/魔术方法)
+1. [regex_pcre](./index.html?title=/md//regex_pcre)
+1. [ssh](./index.html?title=/md//ssh)
+1. [termux](./index.html?title=/md//termux)
+1. [vmware](./index.html?title=/md//vmware)
+1. [windows_command](./index.html?title=/md//windows_command)
+1. [windows_terminal](./index.html?title=/md//windows_terminal)
+1. [windows_系统安装](./index.html?title=/md//windows_系统安装)
+1. [wondows_wsl](./index.html?title=/md//wondows_wsl)
+1. [xorboot](./index.html?title=/md//xorboot)
+1. yii2
+    * [modules配置](./index.html?title=/md//yii2/modules配置)
+    * [命名与映射规则](./index.html?title=/md//yii2/命名与映射规则)
+    * [安装与配置](./index.html?title=/md//yii2/安装与配置)
+    * 实用类
+        * [基类](./index.html?title=/md//yii2/实用类/基类)
+        * [控制器](./index.html?title=/md//yii2/实用类/控制器)
+        * [模型](./index.html?title=/md//yii2/实用类/模型)
+        * [组件](./index.html?title=/md//yii2/实用类/组件)
+        * [视图](./index.html?title=/md//yii2/实用类/视图)
+    * [目录结构](./index.html?title=/md//yii2/目录结构)
+    * [类配置](./index.html?title=/md//yii2/类配置)
+1. [中华字经](./index.html?title=/md//中华字经)
+1. [五笔](./index.html?title=/md//五笔)
+1. [命名规则](./index.html?title=/md//命名规则)
+1. [数理](./index.html?title=/md//数理)
+1. 设备
+    * [MI_Air2_SE蓝牙耳机](./index.html?title=/md//设备/MI_Air2_SE蓝牙耳机)
+1. [证照尺寸](./index.html?title=/md//证照尺寸)

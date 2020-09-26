@@ -1,13 +1,9 @@
 #!/bin/bash
 
 work_path=$(dirname $(readlink -f $0))
+md_path="${work_path}/md/"
 
-md_path_theory="${work_path}/md/知识"
-md_path_practice="${work_path}/md/实践"
-
-index_file_theory="${work_path}/index/index_theory.md"
-index_file_practice="${work_path}/index/index_practice.md"
-index="${work_path}/index/index.md"
+index_file="${work_path}/index/index.md"
 base_url="./index.html?title=";
 
 function createIndex(){
@@ -52,14 +48,7 @@ function createIndex(){
 echo ""
 echo -e "\033[32;5;1m开始创建索引\033[0m"
 
-createIndex $md_path_theory $index_file_theory
-createIndex $md_path_practice $index_file_practice
-
-echo "## 我的笔记" > $index
-html_root=$(echo "$index_file_practice" | grep -oP "(?<=^$work_path).+(?=\.md)")
-echo "* [实践](${base_url}${html_root})" >> $index
-html_root=$(echo "$index_file_theory" | grep -oP "(?<=^$work_path).+(?=\.md)")
-echo "* [知识](${base_url}${html_root})" >> $index
+createIndex $md_path $index_file
 
 echo -e "\033[32;5;1m索引创建完成\033[0m"
 echo ""
