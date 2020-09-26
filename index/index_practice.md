@@ -13,7 +13,9 @@
         * [用户配置](./index.html?title=/md/实践/lnmp配置/php-fpm/用户配置)
 1. php
     * [excel操作](./index.html?title=/md/实践/php/excel操作)
-    * [mysql原生连接与查询](./index.html?title=/md/实践/php/mysql原生连接与查询)
     * [发送请求](./index.html?title=/md/实践/php/发送请求)
+    * 数据库
+        * [数据库查询](./index.html?title=/md/实践/php/数据库/数据库查询)
+        * [数据库连接](./index.html?title=/md/实践/php/数据库/数据库连接)
     * [获取请求数据](./index.html?title=/md/实践/php/获取请求数据)
     * [阿拉伯数字转中文人民币大写](./index.html?title=/md/实践/php/阿拉伯数字转中文人民币大写)
