@@ -274,6 +274,7 @@
         使用图片标签
             <image style="width:100%" src="./img/86五笔字根表.jpg"/>
         ```
+        
 # Markdown扩展语法
 
 ## 扩展转义字符
