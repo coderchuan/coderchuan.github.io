@@ -1,36 +1,10 @@
 ## 我的笔记
 1. [aida64](./index.html?title=/md/aida64)
 1. [composer](./index.html?title=/md/composer)
-1. css
-    * 实用
-        * [滚动条重绘](./index.html?title=/md/css/实用/滚动条重绘)
-    * 文档
-        * [函数](./index.html?title=/md/css/文档/函数)
-        * [单位](./index.html?title=/md/css/文档/单位)
-        * [屏幕长宽计算函数](./index.html?title=/md/css/文档/屏幕长宽计算函数)
-        * [属性](./index.html?title=/md/css/文档/属性)
-        * [选择器](./index.html?title=/md/css/文档/选择器)
 1. [git](./index.html?title=/md/git)
 1. [github_pages](./index.html?title=/md/github_pages)
 1. [gpt分区](./index.html?title=/md/gpt分区)
-1. html
-    * [属性](./index.html?title=/md/html/属性)
 1. [ip地址](./index.html?title=/md/ip地址)
-1. jquery
-    * 实用
-        * [ajax_FormData示例](./index.html?title=/md/jquery/实用/ajax_FormData示例)
-        * [object_to_querystring示例](./index.html?title=/md/jquery/实用/object_to_querystring示例)
-    * 文档
-        * [ajax](./index.html?title=/md/jquery/文档/ajax)
-        * [object_to_querystring](./index.html?title=/md/jquery/文档/object_to_querystring)
-        * [元素选择函数](./index.html?title=/md/jquery/文档/元素选择函数)
-1. js_web
-    * 实用
-        * [空值判断](./index.html?title=/md/js_web/实用/空值判断)
-        * [表头浮动](./index.html?title=/md/js_web/实用/表头浮动)
-    * 文档
-        * [元素选择函数](./index.html?title=/md/js_web/文档/元素选择函数)
-        * [改变url函数](./index.html?title=/md/js_web/文档/改变url函数)
 1. linux
     * [wget_curl](./index.html?title=/md/linux/wget_curl)
     * [区域与时间](./index.html?title=/md/linux/区域与时间)
@@ -82,6 +56,33 @@
 1. [ssh](./index.html?title=/md/ssh)
 1. [termux](./index.html?title=/md/termux)
 1. [vmware](./index.html?title=/md/vmware)
+1. web
+    * css
+        * 实用
+            * [滚动条重绘](./index.html?title=/md/web/css/实用/滚动条重绘)
+        * 文档
+            * [函数](./index.html?title=/md/web/css/文档/函数)
+            * [单位](./index.html?title=/md/web/css/文档/单位)
+            * [屏幕长宽计算函数](./index.html?title=/md/web/css/文档/屏幕长宽计算函数)
+            * [属性](./index.html?title=/md/web/css/文档/属性)
+            * [选择器](./index.html?title=/md/web/css/文档/选择器)
+    * html
+        * [属性](./index.html?title=/md/web/html/属性)
+    * jquery
+        * 实用
+            * [ajax_FormData示例](./index.html?title=/md/web/jquery/实用/ajax_FormData示例)
+            * [object_to_querystring示例](./index.html?title=/md/web/jquery/实用/object_to_querystring示例)
+        * 文档
+            * [ajax](./index.html?title=/md/web/jquery/文档/ajax)
+            * [object_to_querystring](./index.html?title=/md/web/jquery/文档/object_to_querystring)
+            * [元素选择函数](./index.html?title=/md/web/jquery/文档/元素选择函数)
+    * js
+        * 实用
+            * [空值判断](./index.html?title=/md/web/js/实用/空值判断)
+            * [表头浮动](./index.html?title=/md/web/js/实用/表头浮动)
+        * 文档
+            * [元素选择函数](./index.html?title=/md/web/js/文档/元素选择函数)
+            * [改变url函数](./index.html?title=/md/web/js/文档/改变url函数)
 1. [windows_command](./index.html?title=/md/windows_command)
 1. [windows_terminal](./index.html?title=/md/windows_terminal)
 1. [windows_系统安装](./index.html?title=/md/windows_系统安装)
