@@ -24,13 +24,13 @@
         * [ajax](./index.html?title=/md/jquery/文档/ajax)
         * [object_to_querystring](./index.html?title=/md/jquery/文档/object_to_querystring)
         * [元素选择函数](./index.html?title=/md/jquery/文档/元素选择函数)
-1. js
+1. js_web
     * 实用
-        * [空值判断](./index.html?title=/md/js/实用/空值判断)
-        * [表头浮动](./index.html?title=/md/js/实用/表头浮动)
+        * [空值判断](./index.html?title=/md/js_web/实用/空值判断)
+        * [表头浮动](./index.html?title=/md/js_web/实用/表头浮动)
     * 文档
-        * [元素选择函数](./index.html?title=/md/js/文档/元素选择函数)
-        * [改变url函数](./index.html?title=/md/js/文档/改变url函数)
+        * [元素选择函数](./index.html?title=/md/js_web/文档/元素选择函数)
+        * [改变url函数](./index.html?title=/md/js_web/文档/改变url函数)
 1. linux
     * [wget_curl](./index.html?title=/md/linux/wget_curl)
     * [区域与时间](./index.html?title=/md/linux/区域与时间)
