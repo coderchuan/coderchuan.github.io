@@ -15,6 +15,7 @@
         ```
     * html表单(含文件)
         ```js
+        //FormData数据允许POST提交
         var form_data=new FormData(document.getElementById("file_form"));
         $.ajax({
             type:"post",
