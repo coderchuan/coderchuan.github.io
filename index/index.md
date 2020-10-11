@@ -25,15 +25,6 @@
 1. [markdown](./index.html?title=/md/markdown)
 1. [nginx](./index.html?title=/md/nginx)
 1. php
-    * 实用
-        * [excel操作](./index.html?title=/md/php/实用/excel操作)
-        * [发送请求](./index.html?title=/md/php/实用/发送请求)
-        * 数据库
-            * [数据库查询](./index.html?title=/md/php/实用/数据库/数据库查询)
-            * [数据库连接](./index.html?title=/md/php/实用/数据库/数据库连接)
-        * [获取机器唯一码与MAC地址](./index.html?title=/md/php/实用/获取机器唯一码与MAC地址)
-        * [获取请求数据](./index.html?title=/md/php/实用/获取请求数据)
-        * [阿拉伯数字转中文人民币大写](./index.html?title=/md/php/实用/阿拉伯数字转中文人民币大写)
     * 文档
         * [PDO数据库](./index.html?title=/md/php/文档/PDO数据库)
         * [php-fpm](./index.html?title=/md/php/文档/php-fpm)
@@ -52,54 +43,70 @@
         * [插件](./index.html?title=/md/php/文档/插件)
         * [数据类型](./index.html?title=/md/php/文档/数据类型)
         * [魔术方法](./index.html?title=/md/php/文档/魔术方法)
+    * 示例
+        * [excel操作](./index.html?title=/md/php/示例/excel操作)
+        * [发送请求](./index.html?title=/md/php/示例/发送请求)
+        * 数据库
+            * [数据库查询](./index.html?title=/md/php/示例/数据库/数据库查询)
+            * [数据库连接](./index.html?title=/md/php/示例/数据库/数据库连接)
+        * [获取机器唯一码与MAC地址](./index.html?title=/md/php/示例/获取机器唯一码与MAC地址)
+        * [获取请求数据](./index.html?title=/md/php/示例/获取请求数据)
+        * [阿拉伯数字转中文人民币大写](./index.html?title=/md/php/示例/阿拉伯数字转中文人民币大写)
 1. [regex_pcre](./index.html?title=/md/regex_pcre)
 1. [ssh](./index.html?title=/md/ssh)
 1. [termux](./index.html?title=/md/termux)
 1. [vmware](./index.html?title=/md/vmware)
 1. web
     * css
-        * 实用
-            * [滚动条重绘](./index.html?title=/md/web/css/实用/滚动条重绘)
         * 文档
             * [函数](./index.html?title=/md/web/css/文档/函数)
             * [单位](./index.html?title=/md/web/css/文档/单位)
             * [屏幕长宽计算函数](./index.html?title=/md/web/css/文档/屏幕长宽计算函数)
             * [属性](./index.html?title=/md/web/css/文档/属性)
             * [选择器](./index.html?title=/md/web/css/文档/选择器)
+        * 示例
+            * [滚动条重绘](./index.html?title=/md/web/css/示例/滚动条重绘)
     * html
         * [属性](./index.html?title=/md/web/html/属性)
     * jquery
-        * 实用
-            * [ajax_FormData示例](./index.html?title=/md/web/jquery/实用/ajax_FormData示例)
-            * [object_to_querystring示例](./index.html?title=/md/web/jquery/实用/object_to_querystring示例)
         * 文档
             * [ajax](./index.html?title=/md/web/jquery/文档/ajax)
             * [object_to_querystring](./index.html?title=/md/web/jquery/文档/object_to_querystring)
+            * [事件监听](./index.html?title=/md/web/jquery/文档/事件监听)
             * [元素选择函数](./index.html?title=/md/web/jquery/文档/元素选择函数)
+        * 示例
+            * [ajax_FormData示例](./index.html?title=/md/web/jquery/示例/ajax_FormData示例)
+            * [object_to_querystring示例](./index.html?title=/md/web/jquery/示例/object_to_querystring示例)
     * js
-        * 实用
-            * [空值判断](./index.html?title=/md/web/js/实用/空值判断)
-            * [表头浮动](./index.html?title=/md/web/js/实用/表头浮动)
         * 文档
             * [元素选择函数](./index.html?title=/md/web/js/文档/元素选择函数)
             * [改变url函数](./index.html?title=/md/web/js/文档/改变url函数)
+        * 示例
+            * [空值判断](./index.html?title=/md/web/js/示例/空值判断)
+            * [表头浮动](./index.html?title=/md/web/js/示例/表头浮动)
 1. [windows_command](./index.html?title=/md/windows_command)
 1. [windows_terminal](./index.html?title=/md/windows_terminal)
 1. [windows_系统安装](./index.html?title=/md/windows_系统安装)
 1. [wondows_wsl](./index.html?title=/md/wondows_wsl)
 1. [xorboot](./index.html?title=/md/xorboot)
 1. yii2
-    * [modules配置](./index.html?title=/md/yii2/modules配置)
-    * [命名与映射规则](./index.html?title=/md/yii2/命名与映射规则)
-    * [安装与配置](./index.html?title=/md/yii2/安装与配置)
-    * 实用类
-        * [基类](./index.html?title=/md/yii2/实用类/基类)
-        * [控制器](./index.html?title=/md/yii2/实用类/控制器)
-        * [模型](./index.html?title=/md/yii2/实用类/模型)
-        * [组件](./index.html?title=/md/yii2/实用类/组件)
-        * [视图](./index.html?title=/md/yii2/实用类/视图)
-    * [目录结构](./index.html?title=/md/yii2/目录结构)
-    * [类配置](./index.html?title=/md/yii2/类配置)
+    * 文档
+        * [modules配置](./index.html?title=/md/yii2/文档/modules配置)
+        * [命名与映射规则](./index.html?title=/md/yii2/文档/命名与映射规则)
+        * [安装与配置](./index.html?title=/md/yii2/文档/安装与配置)
+        * [目录结构](./index.html?title=/md/yii2/文档/目录结构)
+        * 类
+            * [基类](./index.html?title=/md/yii2/文档/类/基类)
+            * [控制器](./index.html?title=/md/yii2/文档/类/控制器)
+            * [模型](./index.html?title=/md/yii2/文档/类/模型)
+            * [组件](./index.html?title=/md/yii2/文档/类/组件)
+            * [视图](./index.html?title=/md/yii2/文档/类/视图)
+            * 验证器
+                * [验证器](./index.html?title=/md/yii2/文档/类/验证器/验证器)
+                * [验证码](./index.html?title=/md/yii2/文档/类/验证器/验证码)
+        * [类配置](./index.html?title=/md/yii2/文档/类配置)
+    * 示例
+        * 验证器
 1. [中华字经](./index.html?title=/md/中华字经)
 1. [五笔](./index.html?title=/md/五笔)
 1. [命名规则](./index.html?title=/md/命名规则)
