@@ -1,10 +1,8 @@
 ## 我的笔记
-1. [aida64](./index.html?title=/md/aida64)
-1. [composer](./index.html?title=/md/composer)
-1. [git](./index.html?title=/md/git)
-1. [github_pages](./index.html?title=/md/github_pages)
-1. [gpt分区](./index.html?title=/md/gpt分区)
-1. [ip地址](./index.html?title=/md/ip地址)
+1. git与markdown
+    * [github_pages](./index.html?title=/md/git与markdown/github_pages)
+    * [git](./index.html?title=/md/git与markdown/git)
+    * [markdown](./index.html?title=/md/git与markdown/markdown)
 1. linux
     * [wget_curl](./index.html?title=/md/linux/wget_curl)
     * [区域与时间](./index.html?title=/md/linux/区域与时间)
@@ -15,21 +13,24 @@
     * [计划任务](./index.html?title=/md/linux/计划任务)
     * [软件安装与软件](./index.html?title=/md/linux/软件安装与软件)
     * [运行级别](./index.html?title=/md/linux/运行级别)
-1. lnmp配置
-    * nginx
-        * [server配置](./index.html?title=/md/lnmp配置/nginx/server配置)
-        * [用户配置](./index.html?title=/md/lnmp配置/nginx/用户配置)
-    * php-fpm
-        * [与nginx的通信接口配置](./index.html?title=/md/lnmp配置/php-fpm/与nginx的通信接口配置)
-        * [用户配置](./index.html?title=/md/lnmp配置/php-fpm/用户配置)
-1. [markdown](./index.html?title=/md/markdown)
-1. [nginx](./index.html?title=/md/nginx)
+1. lnmp
+    * nginx配置
+        * 文档
+            * [nginx](./index.html?title=/md/lnmp/nginx配置/文档/nginx)
+        * 示例
+            * [server配置](./index.html?title=/md/lnmp/nginx配置/示例/server配置)
+            * [用户配置](./index.html?title=/md/lnmp/nginx配置/示例/用户配置)
+    * php-fpm配置
+        * [与nginx的通信接口配置](./index.html?title=/md/lnmp/php-fpm配置/与nginx的通信接口配置)
+        * [用户配置](./index.html?title=/md/lnmp/php-fpm配置/用户配置)
 1. php
     * 文档
+        * [composer](./index.html?title=/md/php/文档/composer)
         * [PDO数据库](./index.html?title=/md/php/文档/PDO数据库)
-        * [php-fpm](./index.html?title=/md/php/文档/php-fpm)
         * [phpdoc](./index.html?title=/md/php/文档/phpdoc)
+        * [php-fpm](./index.html?title=/md/php/文档/php-fpm)
         * [xdebug](./index.html?title=/md/php/文档/xdebug)
+        * [会话](./index.html?title=/md/php/文档/会话)
         * 函数
             * 时间与日期
                 * [date](./index.html?title=/md/php/文档/函数/时间与日期/date)
@@ -37,11 +38,14 @@
                 * [strftime](./index.html?title=/md/php/文档/函数/时间与日期/strftime)
                 * [strtotime](./index.html?title=/md/php/文档/函数/时间与日期/strtotime)
         * [包含引入](./index.html?title=/md/php/文档/包含引入)
+        * 变量
+            * [全局变量](./index.html?title=/md/php/文档/变量/全局变量)
         * [命令行交互](./index.html?title=/md/php/文档/命令行交互)
         * [命名空间](./index.html?title=/md/php/文档/命名空间)
         * [命名规范](./index.html?title=/md/php/文档/命名规范)
         * [插件](./index.html?title=/md/php/文档/插件)
         * [数据类型](./index.html?title=/md/php/文档/数据类型)
+        * [运行时配置](./index.html?title=/md/php/文档/运行时配置)
         * [魔术方法](./index.html?title=/md/php/文档/魔术方法)
     * 示例
         * [excel操作](./index.html?title=/md/php/示例/excel操作)
@@ -52,10 +56,8 @@
         * [获取机器唯一码与MAC地址](./index.html?title=/md/php/示例/获取机器唯一码与MAC地址)
         * [获取请求数据](./index.html?title=/md/php/示例/获取请求数据)
         * [阿拉伯数字转中文人民币大写](./index.html?title=/md/php/示例/阿拉伯数字转中文人民币大写)
-1. [regex_pcre](./index.html?title=/md/regex_pcre)
-1. [ssh](./index.html?title=/md/ssh)
-1. [termux](./index.html?title=/md/termux)
-1. [vmware](./index.html?title=/md/vmware)
+1. ssh
+    * [ssh](./index.html?title=/md/ssh/ssh)
 1. web
     * css
         * 文档
@@ -77,18 +79,21 @@
         * 示例
             * [ajax_FormData示例](./index.html?title=/md/web/jquery/示例/ajax_FormData示例)
             * [object_to_querystring示例](./index.html?title=/md/web/jquery/示例/object_to_querystring示例)
-    * js
+    * webjs
         * 文档
-            * [元素选择函数](./index.html?title=/md/web/js/文档/元素选择函数)
-            * [改变url函数](./index.html?title=/md/web/js/文档/改变url函数)
+            * [元素选择函数](./index.html?title=/md/web/webjs/文档/元素选择函数)
+            * [改变url函数](./index.html?title=/md/web/webjs/文档/改变url函数)
         * 示例
-            * [空值判断](./index.html?title=/md/web/js/示例/空值判断)
-            * [表头浮动](./index.html?title=/md/web/js/示例/表头浮动)
-1. [windows_command](./index.html?title=/md/windows_command)
-1. [windows_terminal](./index.html?title=/md/windows_terminal)
-1. [windows_系统安装](./index.html?title=/md/windows_系统安装)
-1. [wondows_wsl](./index.html?title=/md/wondows_wsl)
-1. [xorboot](./index.html?title=/md/xorboot)
+            * [空值判断](./index.html?title=/md/web/webjs/示例/空值判断)
+            * [表头浮动](./index.html?title=/md/web/webjs/示例/表头浮动)
+1. windows
+    * [aida64](./index.html?title=/md/windows/aida64)
+    * [gpt分区](./index.html?title=/md/windows/gpt分区)
+    * [windows_command](./index.html?title=/md/windows/windows_command)
+    * [windows_terminal](./index.html?title=/md/windows/windows_terminal)
+    * [windows_系统安装](./index.html?title=/md/windows/windows_系统安装)
+    * [wondows_wsl](./index.html?title=/md/windows/wondows_wsl)
+    * [xorboot](./index.html?title=/md/windows/xorboot)
 1. yii2
     * 文档
         * [modules配置](./index.html?title=/md/yii2/文档/modules配置)
@@ -98,19 +103,29 @@
         * 类
             * [基类](./index.html?title=/md/yii2/文档/类/基类)
             * [控制器](./index.html?title=/md/yii2/文档/类/控制器)
-            * [模型](./index.html?title=/md/yii2/文档/类/模型)
+            * 数据库
+                * [查询生成器](./index.html?title=/md/yii2/文档/类/数据库/查询生成器)
+                * [活动查询生成器](./index.html?title=/md/yii2/文档/类/数据库/活动查询生成器)
+            * 模型
+                * [模型](./index.html?title=/md/yii2/文档/类/模型/模型)
+                * [活动记录](./index.html?title=/md/yii2/文档/类/模型/活动记录)
             * [组件](./index.html?title=/md/yii2/文档/类/组件)
             * [视图](./index.html?title=/md/yii2/文档/类/视图)
             * 验证器
                 * [验证器](./index.html?title=/md/yii2/文档/类/验证器/验证器)
                 * [验证码](./index.html?title=/md/yii2/文档/类/验证器/验证码)
         * [类配置](./index.html?title=/md/yii2/文档/类配置)
-    * 示例
-        * 验证器
-1. [中华字经](./index.html?title=/md/中华字经)
-1. [五笔](./index.html?title=/md/五笔)
-1. [命名规则](./index.html?title=/md/命名规则)
-1. [数理](./index.html?title=/md/数理)
+1. 其他
+    * [ip地址](./index.html?title=/md/其他/ip地址)
+    * [中华字经](./index.html?title=/md/其他/中华字经)
+    * [五笔](./index.html?title=/md/其他/五笔)
+    * [命名规则](./index.html?title=/md/其他/命名规则)
+    * [数理](./index.html?title=/md/其他/数理)
+    * [证照尺寸](./index.html?title=/md/其他/证照尺寸)
+1. 正则
+    * [regex_pcre](./index.html?title=/md/正则/regex_pcre)
+1. 虚拟机
+    * [termux](./index.html?title=/md/虚拟机/termux)
+    * [vmware](./index.html?title=/md/虚拟机/vmware)
 1. 设备
     * [MI_Air2_SE蓝牙耳机](./index.html?title=/md/设备/MI_Air2_SE蓝牙耳机)
-1. [证照尺寸](./index.html?title=/md/证照尺寸)
