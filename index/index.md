@@ -1,7 +1,7 @@
 ## 我的笔记
 1. git与markdown
-    * [github_pages](./index.html?title=/md/git与markdown/github_pages)
     * [git](./index.html?title=/md/git与markdown/git)
+    * [github_pages](./index.html?title=/md/git与markdown/github_pages)
     * [markdown](./index.html?title=/md/git与markdown/markdown)
 1. linux
     * [wget_curl](./index.html?title=/md/linux/wget_curl)
@@ -23,12 +23,13 @@
     * php-fpm配置
         * [与nginx的通信接口配置](./index.html?title=/md/lnmp/php-fpm配置/与nginx的通信接口配置)
         * [用户配置](./index.html?title=/md/lnmp/php-fpm配置/用户配置)
+    * [文件上传大小限制配置](./index.html?title=/md/lnmp/文件上传大小限制配置)
 1. php
     * 文档
-        * [composer](./index.html?title=/md/php/文档/composer)
         * [PDO数据库](./index.html?title=/md/php/文档/PDO数据库)
-        * [phpdoc](./index.html?title=/md/php/文档/phpdoc)
+        * [composer](./index.html?title=/md/php/文档/composer)
         * [php-fpm](./index.html?title=/md/php/文档/php-fpm)
+        * [phpdoc](./index.html?title=/md/php/文档/phpdoc)
         * [xdebug](./index.html?title=/md/php/文档/xdebug)
         * [会话](./index.html?title=/md/php/文档/会话)
         * 函数
@@ -76,6 +77,7 @@
             * [object_to_querystring](./index.html?title=/md/web/jquery/文档/object_to_querystring)
             * [事件监听](./index.html?title=/md/web/jquery/文档/事件监听)
             * [元素选择函数](./index.html?title=/md/web/jquery/文档/元素选择函数)
+            * [动画](./index.html?title=/md/web/jquery/文档/动画)
         * 示例
             * [ajax_FormData示例](./index.html?title=/md/web/jquery/示例/ajax_FormData示例)
             * [object_to_querystring示例](./index.html?title=/md/web/jquery/示例/object_to_querystring示例)
@@ -107,6 +109,7 @@
                 * [查询生成器](./index.html?title=/md/yii2/文档/类/数据库/查询生成器)
                 * [活动查询生成器](./index.html?title=/md/yii2/文档/类/数据库/活动查询生成器)
             * 模型
+                * [临时模型](./index.html?title=/md/yii2/文档/类/模型/临时模型)
                 * [模型](./index.html?title=/md/yii2/文档/类/模型/模型)
                 * [活动记录](./index.html?title=/md/yii2/文档/类/模型/活动记录)
             * [组件](./index.html?title=/md/yii2/文档/类/组件)
@@ -115,6 +118,8 @@
                 * [验证器](./index.html?title=/md/yii2/文档/类/验证器/验证器)
                 * [验证码](./index.html?title=/md/yii2/文档/类/验证器/验证码)
         * [类配置](./index.html?title=/md/yii2/文档/类配置)
+    * 示例
+        * 验证器
 1. 其他
     * [ip地址](./index.html?title=/md/其他/ip地址)
     * [中华字经](./index.html?title=/md/其他/中华字经)
