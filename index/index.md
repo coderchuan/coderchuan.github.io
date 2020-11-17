@@ -1,7 +1,7 @@
 ## 我的笔记
 1. git与markdown
-    * [git](./index.html?title=/md/git与markdown/git)
     * [github_pages](./index.html?title=/md/git与markdown/github_pages)
+    * [git](./index.html?title=/md/git与markdown/git)
     * [markdown](./index.html?title=/md/git与markdown/markdown)
 1. linux
     * [wget_curl](./index.html?title=/md/linux/wget_curl)
@@ -26,10 +26,10 @@
     * [文件上传大小限制配置](./index.html?title=/md/lnmp/文件上传大小限制配置)
 1. php
     * 文档
-        * [PDO数据库](./index.html?title=/md/php/文档/PDO数据库)
         * [composer](./index.html?title=/md/php/文档/composer)
-        * [php-fpm](./index.html?title=/md/php/文档/php-fpm)
+        * [PDO数据库](./index.html?title=/md/php/文档/PDO数据库)
         * [phpdoc](./index.html?title=/md/php/文档/phpdoc)
+        * [php-fpm](./index.html?title=/md/php/文档/php-fpm)
         * [xdebug](./index.html?title=/md/php/文档/xdebug)
         * [会话](./index.html?title=/md/php/文档/会话)
         * 函数
@@ -68,6 +68,7 @@
             * [属性](./index.html?title=/md/web/css/文档/属性)
             * [选择器](./index.html?title=/md/web/css/文档/选择器)
         * 示例
+            * [placeholder样式](./index.html?title=/md/web/css/示例/placeholder样式)
             * [滚动条重绘](./index.html?title=/md/web/css/示例/滚动条重绘)
     * html
         * [属性](./index.html?title=/md/web/html/属性)
@@ -91,6 +92,7 @@
 1. windows
     * [aida64](./index.html?title=/md/windows/aida64)
     * [gpt分区](./index.html?title=/md/windows/gpt分区)
+    * [ventoy](./index.html?title=/md/windows/ventoy)
     * [windows_command](./index.html?title=/md/windows/windows_command)
     * [windows_terminal](./index.html?title=/md/windows/windows_terminal)
     * [windows_系统安装](./index.html?title=/md/windows/windows_系统安装)
@@ -118,8 +120,6 @@
                 * [验证器](./index.html?title=/md/yii2/文档/类/验证器/验证器)
                 * [验证码](./index.html?title=/md/yii2/文档/类/验证器/验证码)
         * [类配置](./index.html?title=/md/yii2/文档/类配置)
-    * 示例
-        * 验证器
 1. 其他
     * [ip地址](./index.html?title=/md/其他/ip地址)
     * [中华字经](./index.html?title=/md/其他/中华字经)
