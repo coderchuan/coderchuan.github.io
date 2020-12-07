@@ -1,7 +1,7 @@
 ## 我的笔记
 1. git与markdown
-    * [git](./index.html?title=/md/git与markdown/git)
     * [github_pages](./index.html?title=/md/git与markdown/github_pages)
+    * [git](./index.html?title=/md/git与markdown/git)
     * [markdown](./index.html?title=/md/git与markdown/markdown)
 1. linux
     * [wget_curl](./index.html?title=/md/linux/wget_curl)
@@ -26,10 +26,10 @@
     * [文件上传大小限制配置](./index.html?title=/md/lnmp/文件上传大小限制配置)
 1. php
     * 文档
-        * [PDO数据库](./index.html?title=/md/php/文档/PDO数据库)
         * [composer](./index.html?title=/md/php/文档/composer)
-        * [php-fpm](./index.html?title=/md/php/文档/php-fpm)
+        * [PDO数据库](./index.html?title=/md/php/文档/PDO数据库)
         * [phpdoc](./index.html?title=/md/php/文档/phpdoc)
+        * [php-fpm](./index.html?title=/md/php/文档/php-fpm)
         * [xdebug](./index.html?title=/md/php/文档/xdebug)
         * [会话](./index.html?title=/md/php/文档/会话)
         * 函数
@@ -120,8 +120,6 @@
                 * [验证器](./index.html?title=/md/yii2/文档/类/验证器/验证器)
                 * [验证码](./index.html?title=/md/yii2/文档/类/验证器/验证码)
         * [类配置](./index.html?title=/md/yii2/文档/类配置)
-    * 示例
-        * 验证器
 1. 其他
     * [ip地址](./index.html?title=/md/其他/ip地址)
     * [中华字经](./index.html?title=/md/其他/中华字经)
