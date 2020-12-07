@@ -68,6 +68,7 @@
             * [属性](./index.html?title=/md/web/css/文档/属性)
             * [选择器](./index.html?title=/md/web/css/文档/选择器)
         * 示例
+            * [placeholder样式](./index.html?title=/md/web/css/示例/placeholder样式)
             * [滚动条重绘](./index.html?title=/md/web/css/示例/滚动条重绘)
     * html
         * [属性](./index.html?title=/md/web/html/属性)
@@ -91,6 +92,7 @@
 1. windows
     * [aida64](./index.html?title=/md/windows/aida64)
     * [gpt分区](./index.html?title=/md/windows/gpt分区)
+    * [ventoy](./index.html?title=/md/windows/ventoy)
     * [windows_command](./index.html?title=/md/windows/windows_command)
     * [windows_terminal](./index.html?title=/md/windows/windows_terminal)
     * [windows_系统安装](./index.html?title=/md/windows/windows_系统安装)
