@@ -88,9 +88,9 @@ var app={
             });
         },
         time:function(){
-            if((typeof(time_solids)==='object')){$.each(time_solids,function(k,v){clearInterval(v);});} 
+            if((typeof(time_solids)==='object')){$.each(time_solids,function(k,v){clearTimeout(v);});} 
             time_solids=Array();
-            time_temp=setInterval(function(){
+            time_temp=setTimeout(function(){
                 if((typeof(time_solid_direction)==='undefined'))time_solid_direction=1;
                 var child=$(".option>div");
                 var cur_index=app.model.get_active_index(child);
