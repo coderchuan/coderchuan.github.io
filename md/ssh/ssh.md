@@ -36,15 +36,16 @@
         * `ListenAddress[:port]`：要监听的本机IP(可指定端口)，支持ipv4和ipv6。默认监听所有，`0.0.0.0`表示所有ipv4地址，`::`表示所有ipv6地址。可以配置多项
         * `Prot`：服务端口,不配置此项且`ListenAddress`中未指定端口时,默认22。当`ListenAddress`中指定端口时，此项被忽略
         * `TCPKeepAlive`：当与ssh服务器建立后每隔一段时间就发送TCP心跳包以防止连接断开
-            `yes`：发送心跳包
-            `no`：不发送心跳包
+            * `yes`：发送心跳包
+            * `no`：不发送心跳包
         * `PasswordAuthentication`：允许密码登录。默认开启
-            `yes`：允许密码登录
-            `no`：禁止登录
+            * `yes`：允许密码登录
+            * `no`：禁止登录
         * `PermitRootLogin`：root用户登录权限设定。默认root禁止密码登录
-            `prohibit-password`：禁止密码登录
-            `yes`：允许密钥和密码登录。必须同时设置`PasswordAuthentication yes`
-            `no`：禁止登录
+            * `yes`：允许密钥和密码登录。必须同时设置`PasswordAuthentication yes`
+            * `no`：禁止登录 
+            * `without-password`或`prohibit-password`：禁止密码登录
+            * `forced-commands-only`：只允许root用户使用密钥登录,并且不登录交互shell,只执行`/root/.ssh/authorized_keys`对应的公钥前的命令,命令指定的方式为`command="SH" ssh-rsa AAAABE...ADAQ`,其中`SH`是脚本路径,`ssh-rsa AAAABE...ADAQ`是添加的公钥 
 
 ## 配置客户端:
 * 私匙
@@ -56,7 +57,7 @@
         * linux：`~/.ssh/config`,此文件权限`600`
         * windows：`C:\users\%USERNAME%\.ssh\config` 
     * 配置项
-        * `include PATH`：包含其他配置文件，`PATH`表示要包含的配置文件路径。此配置项必须放在文件顶部
+        * `Include PATH`：包含其他配置文件，`PATH`表示要包含的配置文件路径。此配置项必须放在文件顶部。Windows命令行下无效
         * `Host HOSTALIAS`：`HOSTALIAS`表示主机别名。可以直接使用命令`ssh HOSTALIAS`连接,但是在git中必须使用与`HostName`相同的值 
         * `User USERNAME`：`USERNAME`表示主机用户名。github中此项的值必须为`git`
         * `HostName IP_OR_DOMAIN`：`IP_OR_DOMAIN`表示主机IP或域名 
