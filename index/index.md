@@ -66,9 +66,17 @@
             * [单位](./index.html?title=/md/web/css/文档/单位)
             * [屏幕长宽计算函数](./index.html?title=/md/web/css/文档/屏幕长宽计算函数)
             * [属性](./index.html?title=/md/web/css/文档/属性)
+            * [布局](./index.html?title=/md/web/css/文档/布局)
             * [选择器](./index.html?title=/md/web/css/文档/选择器)
         * 示例
             * [placeholder样式](./index.html?title=/md/web/css/示例/placeholder样式)
+            * 图片轮播
+                * [jquery_3.2.1](./index.html?title=/md/web/css/示例/图片轮播/jquery_3.2.1)
+                * [report_img1](./index.html?title=/md/web/css/示例/图片轮播/report_img1)
+                * [report_img2](./index.html?title=/md/web/css/示例/图片轮播/report_img2)
+                * [solider](./index.html?title=/md/web/css/示例/图片轮播/solider)
+                * [图片轮播](./index.html?title=/md/web/css/示例/图片轮播/图片轮播)
+            * [弹窗居中](./index.html?title=/md/web/css/示例/弹窗居中)
             * [滚动条重绘](./index.html?title=/md/web/css/示例/滚动条重绘)
     * html
         * [属性](./index.html?title=/md/web/html/属性)
@@ -127,10 +135,11 @@
     * [命名规则](./index.html?title=/md/其他/命名规则)
     * [数理](./index.html?title=/md/其他/数理)
     * [证照尺寸](./index.html?title=/md/其他/证照尺寸)
+1. 内网穿透
+    * 文档
+        * [frp](./index.html?title=/md/内网穿透/文档/frp)
 1. 正则
     * [regex_pcre](./index.html?title=/md/正则/regex_pcre)
 1. 虚拟机
     * [termux](./index.html?title=/md/虚拟机/termux)
     * [vmware](./index.html?title=/md/虚拟机/vmware)
-1. 设备
-    * [MI_Air2_SE蓝牙耳机](./index.html?title=/md/设备/MI_Air2_SE蓝牙耳机)
