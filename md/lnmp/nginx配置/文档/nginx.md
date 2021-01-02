@@ -271,6 +271,13 @@
     * LOG_FORMAT：LOG格式,可以选择二种方式:
         * 使用log_format已经定义好的FORMAT_NAME名称
         * 省略此参数则使用系统默认的日志格式 
+* ` server_tokens {(on)|off} `
+    * 功能：是否在返回给客户端的信息中包含`nginx`的版本信息
+    * 使用位置：http,server,location 
+    * 值类型：text
+    * 取值 
+        * on:开启,默认 
+        * off:关闭 
 * ` rewrite PATTERN NEW_URL_OR_URI [flag] `
     * 功能：网址重定向,如果PATTERN匹配成功则此条命令生效,否则跳过
     * 使用位置：server,location,if
@@ -286,7 +293,7 @@
     * 功能：返回状态码或重定向
     * 使用位置：server,location,if
     * CODE：可以使用的状态码 
-        * 200：STRING表示返回到网页的字符串,作为html显示。可用于调试
+        * 200：STRING表示返回到网页的字符串,作为html显示(需要设置default_type项的值为text/html)。可用于调试 
         * 301：STRING表示永久重定向的URL或URI
         * 302：STRING表示临时重定向的URL或URI
         * 400等：无STRING 

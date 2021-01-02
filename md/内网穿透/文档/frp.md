@@ -154,7 +154,7 @@
                     * 功能：监控面板登录密码
                     * 类型：text 
                     * 取值：admin,默认 
-    * 客户端 
+    * 客户端(被访问端)
         * `[common]`
             * 基础配置 
                 * `server_addr`
@@ -274,7 +274,183 @@
                         * 其他值,指定的密码 
         * `[proxy_config]`代理配置。名称可自定义,如`[ssh]`,`[web]`,可定义多个代理配置 
             * 基础配置 
-                * 
+                * `type`
+                    * 功能：指定代理的类型
+                    * 类型：text
+                    * 取值 
+                        * tcp,默认
+                        * udp
+                        * http
+                        * https
+                        * stcp 
+                        * sudp
+                        * xtcp
+                        * tcpmux(不常用) 
+                * `use_encryption`
+                    * 功能：frp客户端与服务端之间的信息传输是否启用加密功能
+                    * 类型：bool
+                    * 取值
+                        * false:不启用加密功能,默认
+                        * true:启用加密。
+                * `use_compression`
+                    * 功能：frp客户端与服务端之间的信息传输是否启用压缩功能
+                    * 类型：bool
+                    * 取值
+                        * false:不启用压缩功能,默认
+                        * true:启用压缩功能
+                * `proxy_protocol_version`
+                    * 功能：是否发送`proxy protocol协议`(基于TCP协议的代理) 
+                    * 类型：text 
+                    * 取值
+                        * 未设置此项值,不发送`proxy protocol协议`
+                        * v1,版本1
+                        * v2,版本2。此值可用于获取用户的真实IP 
+                * `bandwidth_limit`
+                    * 功能：限制当前的代理的宽带速度
+                    * 类型：text 
+                        * 取值
+                            * 0:不限制,默认
+                            * 5MB:最大宽带速度为5MB 
+                            * 1024KB:最大的宽带速度为124KB 
+                * `local_ip`
+                    * 功能：需要被代理的服务的IP地址,可以是所在 frpc 能访问到的任意 IP 地址 
+                    * 类型：text
+                    * 取值
+                        * 127.0.0.1:部署在本机的服务,默认
+                        * 192.168.1.36:部署在`192.168.1.36`的内网服务
+                * `local_port`
+                    * 功能：需要被代理的服务的端口
+                    * 类型：int 
+                    * 取值
+                        * 80:被代理的服务所在的端口为80
+                * `plugin`
+                    * 功能：客户端插件名称，如果配置了 plugin，则 local_ip 和 local_port 无效
+                    * 类型：text 
+                    * 取值
+                        * https2http:启用https代理的插件
+                * `plugin_params`
+                    * 功能：插件需要的参数
+                    * 类型：map(每个配置的参数需要以`plugin_`作为前缀)
+                    * `https2http`插件参数配置示例 
+                        * `plugin_local_addr = IP:PORT`:https的服务地址为`IP`端口为`PORT`
+                        * `plugin_crt_path = CRT`:https的`.crt`文件路径为`CRT`
+                        * `plugin_key_path = KEY`:https的`.key`文件路径为`KEY`
+                        * `plugin_host_header_rewrite = IP`:替换发送到本地服务 HTTP 请求中的 Host 字段为`IP`
+                * `group`
+                    * 功能：负载均衡分组名称,用户请求会以轮询的方式发送给同一个 group 中的代理
+                    * 类型：text 
+                    * 取值
+                        * 未配置此项时不启用负载均衡
+                        * web:均衡分组名称为`web`
+                * `group_key`
+                    * 功能：负载均衡分组密钥,只有同一个`group`且同一个`group_key`才会被加入同一个负载均衡组中
+                    * 类型：text 
+                    * 取值
+                        * 未配置此项时不启用负载均衡密钥验证
+                        * pq:均衡分组密钥为`pq`
+            * TCP、UDP
+                * `remote_port`
+                    * 功能：frps绑定到frpc的端口,用户访问此端口的请求会被转发到 local_ip:local_port
+                    * 类型：int
+                    * 取值
+                        * 80:绑定的端口为80
+            * HTTP
+                * `custom_domains`
+                    * 功能：frps绑定的IP或域名,当用户访问此域名时则被解析到当前的代理服务中
+                    * 类型：text数组,使用逗号分隔
+                    * 取值
+                        * 未配置:则必须配置`subdomain`
+                        * `106.75.241.124`:服务器的IP是`106.75.241.124`
+                        * `www.myweb.com`:服务器的域名是`www.myweb.com`
+                * `subdomain`
+                    * 功能：frps绑定的子域名,当用户访问此域名时则被解析到当前的代理服务中
+                    * 类型：text
+                    * 取值
+                        * 未配置:则必须配置`custom_domains`
+                        * `www`:二级域名的前缀是`www`
+                        * `abc`:二级域名的前缀是`abc`
+                * `locations`
+                    * 功能：URL路由匹配(最大前缀匹配),当用户访问此路由时则被解析到当前的代理服务中
+                    * 类型：text数组,使用逗号分隔
+                    * 取值
+                        * 未配置:不启用路径匹配模式
+                        * `abc`:路由前缀为`abc`时对应到此服务
+                * `http_user`
+                    * 功能：访问站点的用户名
+                    * 类型：text
+                    * 取值
+                        * 未配置:不使用frp访问控制
+                        * abc:访问的用户名为`abc`
+                * `http_pwd`
+                    * 功能：访问站点的密码(配置了`http_user`时才有效) 
+                    * 类型：text
+                    * 取值
+                        * 未配置:密码为空
+                        * abc:访问的密码为`abc`
+                * `host_header_rewrite`
+                    * 功能：替换发送到本地服务的`Header`的`Host`字段 
+                    * 类型：text 
+                    * 取值
+                        * 未配置:不替换
+                        * `127.0.0.1`:替换为`127.0.0.1`
+                * `headers`
+                    * 功能：添加发送到本地服务的`Header`的字段 
+                    * 类型：map(每个配置的参数需要以`header_`作为前缀) 
+                    * 配置示例
+                        * `header_abc = 123`:在发送到本地服务的Header中添加值为`123`的字段`abc` 
+            * HTTPS
+                * `custom_domains`:同`HTTP`的此项配置
+                * `sub_domain`:同`HTTP`的此项配置
+            * STCP、SUDP、XTCP
+                * `role = server`
+                    * 功能：定义运行frpc的是被访问端还是访问端
+                    * 类型：text 
+                        * server:被访问端
+                        * visitor:访问端
+                * `sk`
+                    * 功能：密钥,被访问端和访问端的密钥需要一致才能建立连接 
+                    * 类型：text 
+                    * 取值 
+                        * kkk:密钥是`kkk`
+    * 访问端 
+        * `[common]`
+            * `server_addr`:同被访问端的此项配置
+            * `server_port`:同被访问端的此项配置
+        * `[proxy_config]`代理配置。名称可自定义,如`[ssh]`,`[web]`,可定义多个代理配置
+            * STCP、SUDP、XTCP
+                * `type`
+                    * 功能：指定代理的类型
+                    * 类型：text
+                    * 取值 
+                        * tcp,默认
+                        * udp
+                        * http
+                        * https
+                        * stcp 
+                        * sudp
+                        * xtcp
+                        * tcpmux(不常用) 
+                * `role = server`
+                    * 功能：定义运行frpc的是被访问端还是访问端
+                    * 类型：text 
+                        * server:被访问端
+                        * visitor:访问端
+                * `server_name`
+                    * 功能：被访问端fpc代理服务的名称 
+                    * 类型：text
+                    * 取值
+                        * ssh:被访问端的代理名称为`ssh`
+                        * web:被访问端的代理名称为`web`
+                * `bind_addr`
+                    * 功能：访问端frpc的IP地址,访问端只需要访问此bind_addr:bind_port即可访问被访问端的服务
+                    * 类型：text
+                    * 取值
+                        * `127.0.0.1`:访问端正在运行frpc的IP为`127.0.0.1`
+                * `bind_port`
+                    * 功能：访问端frpc的端口,访问端只需要访问此bind_addr:bind_port即可访问被访问端的服务
+                    * 类型：int
+                    * 取值
+                        * `8086`:访问端正在运行frpc的端口为`8086`
 * 开启kcp模式(当frp客户端网络状况不佳时建议使用此模式) 
     * 服务端添加以下选项
         ```
@@ -286,7 +462,7 @@
         [common]
         protocol = kcp
         ```
-* 穿透类型及配置项
+* 代理配置类型及配置项
     * tcp、udp
         * 服务端 
             ```
@@ -350,7 +526,6 @@
             plugin_crt_path 
             plugin_key_path  
             plugin_host_header_rewrite  
-            plugin_header_X-From-Where 
             ```
     * stcp(加密的tcp传输)、sudp(加密的udp传输)
         * 服务端
@@ -417,3 +592,31 @@
             bind_addr 
             bind_port 
             ```
+* 获取用户的真实IP 
+    * `http`有以下三种方式 
+        1. php `$_SERVER['HTTP_X_FORWARDED_FOR']`
+        1. 使用`HTTP_X_FORWARDED_FOR`
+            * `nginx`的`server`配置
+                * `set_real_ip_from IP;`其中`IP`表示`frpc`所在的内网IP,若内网服务与frpc在同一台服务器上,则可使用`127.0.0.1`
+                * `real_ip_header X-Forwarded-For;`
+                * `real_ip_recursive on;`
+            * php `$_SERVER['REMOTE_ADDR']`
+        1. 使用`proxy_protocol_version`配置项
+            * `nginx`的`server`配置
+                * `listen PORT proxy_protocol;`其中`PORT`表示web监听的端口
+                * `set_real_ip_from IP;`其中`IP`表示`frpc`所在的内网IP,若内网服务与frpc在同一台服务器上,则可使用`127.0.0.1`
+                * `real_ip_header proxy_protocol;`   
+                * `real_ip_recursive on;`
+            * `frpc.ini`代理配置
+                * `proxy_protocol_version = v2`
+            * php `$_SERVER['REMOTE_ADDR']`
+    * `https`使用`proxy_protocol_version`配置项
+        * `nginx`的`server`配置
+            * `listen PORT ssl http2 proxy_protocol;`其中`PORT`表示web监听的端口
+                * `set_real_ip_from IP;`其中`IP`表示`frpc`所在的内网IP,若内网服务与frpc在同一台服务器上,则可使用`127.0.0.1`
+            * `real_ip_header proxy_protocol;`
+            * `real_ip_recursive on;`
+        * `frpc.ini`代理配置
+            * `proxy_protocol_version = v2`
+        * php `$_SERVER['REMOTE_ADDR']`
+    
