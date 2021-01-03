@@ -109,28 +109,28 @@
     * [windows_系统安装](./index.html?title=/md/windows/windows_系统安装)
     * [wondows_wsl](./index.html?title=/md/windows/wondows_wsl)
     * [xorboot](./index.html?title=/md/windows/xorboot)
+    * [禁止和启用Win10自动更新](./index.html?title=/md/windows/禁止和启用Win10自动更新)
 1. yii2
     * 文档
-        * [modules配置](./index.html?title=/md/yii2/文档/modules配置)
-        * [命名与映射规则](./index.html?title=/md/yii2/文档/命名与映射规则)
-        * [安装与配置](./index.html?title=/md/yii2/文档/安装与配置)
-        * [目录结构](./index.html?title=/md/yii2/文档/目录结构)
-        * 类
-            * [基类](./index.html?title=/md/yii2/文档/类/基类)
-            * [控制器](./index.html?title=/md/yii2/文档/类/控制器)
-            * 数据库
-                * [查询生成器](./index.html?title=/md/yii2/文档/类/数据库/查询生成器)
-                * [活动查询生成器](./index.html?title=/md/yii2/文档/类/数据库/活动查询生成器)
+        * MVC
+            * [控制器](./index.html?title=/md/yii2/文档/MVC/控制器)
             * 模型
-                * [临时模型](./index.html?title=/md/yii2/文档/类/模型/临时模型)
-                * [模型](./index.html?title=/md/yii2/文档/类/模型/模型)
-                * [活动记录](./index.html?title=/md/yii2/文档/类/模型/活动记录)
-            * [组件](./index.html?title=/md/yii2/文档/类/组件)
-            * [视图](./index.html?title=/md/yii2/文档/类/视图)
-            * 验证器
-                * [验证器](./index.html?title=/md/yii2/文档/类/验证器/验证器)
-                * [验证码](./index.html?title=/md/yii2/文档/类/验证器/验证码)
-        * [类配置](./index.html?title=/md/yii2/文档/类配置)
+                * [临时模型](./index.html?title=/md/yii2/文档/MVC/模型/临时模型)
+                * [模型](./index.html?title=/md/yii2/文档/MVC/模型/模型)
+                * [活动记录](./index.html?title=/md/yii2/文档/MVC/模型/活动记录)
+            * [视图](./index.html?title=/md/yii2/文档/MVC/视图)
+        * 基础
+            * [ID映射规则](./index.html?title=/md/yii2/文档/基础/ID映射规则)
+            * [入口脚本及配置](./index.html?title=/md/yii2/文档/基础/入口脚本及配置)
+            * [基类](./index.html?title=/md/yii2/文档/基础/基类)
+            * [安装与部署](./index.html?title=/md/yii2/文档/基础/安装与部署)
+        * 数据库
+            * [查询生成器](./index.html?title=/md/yii2/文档/数据库/查询生成器)
+            * [活动查询生成器](./index.html?title=/md/yii2/文档/数据库/活动查询生成器)
+        * 组件
+        * 验证器
+            * [验证器](./index.html?title=/md/yii2/文档/验证器/验证器)
+            * [验证码](./index.html?title=/md/yii2/文档/验证器/验证码)
     * 示例
         * 验证器
 1. 其他
