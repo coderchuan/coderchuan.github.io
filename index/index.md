@@ -6,7 +6,9 @@
 1. linux
     * [wget_curl](./index.html?title=/md/linux/wget_curl)
     * [区域与时间](./index.html?title=/md/linux/区域与时间)
+    * [压缩与解压缩](./index.html?title=/md/linux/压缩与解压缩)
     * [常用命令](./index.html?title=/md/linux/常用命令)
+    * [文件管理](./index.html?title=/md/linux/文件管理)
     * [管道与xargs](./index.html?title=/md/linux/管道与xargs)
     * [终端配置](./index.html?title=/md/linux/终端配置)
     * [自启动](./index.html?title=/md/linux/自启动)
@@ -125,6 +127,7 @@
             * [基类](./index.html?title=/md/yii2/文档/基础/基类)
             * [安装与部署](./index.html?title=/md/yii2/文档/基础/安装与部署)
         * 数据库
+            * [数据库连接配置](./index.html?title=/md/yii2/文档/数据库/数据库连接配置)
             * [查询生成器](./index.html?title=/md/yii2/文档/数据库/查询生成器)
             * [活动查询生成器](./index.html?title=/md/yii2/文档/数据库/活动查询生成器)
         * 组件
