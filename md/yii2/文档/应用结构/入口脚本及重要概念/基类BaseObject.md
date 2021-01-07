@@ -1,4 +1,4 @@
-## 基类
+## 基类BaseObject
 * 类名:`\yii\base\BaseObject`
 * 定义时需要继承的类:`\yii\base\BaseObject`
 * [官方文档](https://www.yiichina.com/doc/api/2.0/yii-base-baseobject) 
