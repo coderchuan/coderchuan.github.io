@@ -114,21 +114,22 @@
     * [禁止和启用Win10自动更新](./index.html?title=/md/windows/禁止和启用Win10自动更新)
 1. yii2
     * 文档
-        * 基础
-            * [ID映射规则](./index.html?title=/md/yii2/文档/基础/ID映射规则)
-            * [基类](./index.html?title=/md/yii2/文档/基础/基类)
-            * [安装与部署](./index.html?title=/md/yii2/文档/基础/安装与部署)
-        * 应用及应用结构
-            * [应用](./index.html?title=/md/yii2/文档/应用及应用结构/应用)
-            * 应用结构
-                * [入口脚本及配置](./index.html?title=/md/yii2/文档/应用及应用结构/应用结构/入口脚本及配置)
-                * [控制器](./index.html?title=/md/yii2/文档/应用及应用结构/应用结构/控制器)
-                * 模型
-                    * [临时模型](./index.html?title=/md/yii2/文档/应用及应用结构/应用结构/模型/临时模型)
-                    * [模型](./index.html?title=/md/yii2/文档/应用及应用结构/应用结构/模型/模型)
-                    * [活动记录](./index.html?title=/md/yii2/文档/应用及应用结构/应用结构/模型/活动记录)
-                * [组件](./index.html?title=/md/yii2/文档/应用及应用结构/应用结构/组件)
-                * [视图](./index.html?title=/md/yii2/文档/应用及应用结构/应用结构/视图)
+        * [安装部署](./index.html?title=/md/yii2/文档/安装部署)
+        * 应用结构
+            * 入口脚本及重要概念
+                * [ID映射规则](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/ID映射规则)
+                * [入口脚本](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/入口脚本)
+                * [基类](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/基类)
+                * [应用的组成与分类](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/应用的组成与分类)
+                * [配置](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/配置)
+            * [基类](./index.html?title=/md/yii2/文档/应用结构/基类)
+            * [控制器](./index.html?title=/md/yii2/文档/应用结构/控制器)
+            * 模型
+                * [临时模型](./index.html?title=/md/yii2/文档/应用结构/模型/临时模型)
+                * [模型](./index.html?title=/md/yii2/文档/应用结构/模型/模型)
+                * [活动记录](./index.html?title=/md/yii2/文档/应用结构/模型/活动记录)
+            * [组件](./index.html?title=/md/yii2/文档/应用结构/组件)
+            * [视图](./index.html?title=/md/yii2/文档/应用结构/视图)
         * 数据库
             * [数据库连接配置](./index.html?title=/md/yii2/文档/数据库/数据库连接配置)
             * [查询生成器](./index.html?title=/md/yii2/文档/数据库/查询生成器)
