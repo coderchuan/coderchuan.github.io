@@ -7,8 +7,10 @@
 * 重要特性
     * 布局与渲染
         * `public string renderAjax($view, $params = [])`
-            * 功能：为ajax请求呈现视图并注入被视图所注册的js和css资源 
+            * 功能：渲染视图,不使用布局,可推送变量,加载视图中注册的cs/js文件,适用于局部页面的渲染
             * 参数
                 * view:视图。详见`\yii\base\Controller`的`render()`方法 
                 * params:参数。关联数据，详见`\yii\base\Controller`的`render()`方法 
-            * 返回值：string。渲染的html文本 
+            * 返回值：string。渲染的html文本  
+            * 注意：`加载视图中注册的cs/js文件`是与函数`renderPartial()`的唯一区别 
+          

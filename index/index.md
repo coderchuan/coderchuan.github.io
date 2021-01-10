@@ -119,10 +119,13 @@
             * 入口脚本及重要概念
                 * [ID映射规则](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/ID映射规则)
                 * [入口脚本](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/入口脚本)
-                * [基类](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/基类)
+                * [别名](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/别名)
+                * [基类BaseObject](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/基类BaseObject)
                 * [应用的组成与分类](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/应用的组成与分类)
                 * [配置](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/配置)
-            * [控制器](./index.html?title=/md/yii2/文档/应用结构/控制器)
+            * 控制器
+                * [web控制器](./index.html?title=/md/yii2/文档/应用结构/控制器/web控制器)
+                * [基本控制器](./index.html?title=/md/yii2/文档/应用结构/控制器/基本控制器)
             * 模型
                 * [临时模型](./index.html?title=/md/yii2/文档/应用结构/模型/临时模型)
                 * [模型](./index.html?title=/md/yii2/文档/应用结构/模型/模型)
@@ -155,3 +158,4 @@
     * [termux](./index.html?title=/md/虚拟机/termux)
     * [vmware](./index.html?title=/md/虚拟机/vmware)
 1. 设备
+    * [itoos_ka2蓝牙耳机](./index.html?title=/md/设备/itoos_ka2蓝牙耳机)
