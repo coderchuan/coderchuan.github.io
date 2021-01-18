@@ -20,7 +20,7 @@
     1. 回到第一步
 * 开机自动启动
     1. 在wsl的root用户下将要启动的服务使用`crontab -e`写入计划任务并将启动时间设置为`@reboot`(详见计划任务)
-    1. 在windows中新建后缀为`.cmd`的命令行脚本文件,文件内容为`wsl -u root /etc/init.d/cron start`，设该文件为A
+    1. 在windows中新建后缀为`.cmd`的命令行脚本文件,文件内容为`wsl -u root /etc/init.d/cron restart`，设该文件为A
     1. 在windows中使用快捷键`田+R`出现`运行`窗口，输入`shell:startup`确定进行windows自动启动目录，将A文件放入此目录中即可
 * 常见问题
     * 在`WSL1`版本中`Ubuntu-20.04`的`sleep`模块异常，升级`WSL1`到`WSL2`即可解决
