@@ -6,6 +6,10 @@
 * 运行指定的linux子系统：`wsl -d NAME [-u USERNAME]`，其中`NAME`为`列出已经安装的linux子系统`命令中列出的发行版名称,`USERNAME`为linux子系统中的用户名
 * 设置默认linux子系统登录用户：`NAME --default-user USERNAME`，其中`NAME`为`列出已经安装的linux子系统`命令中列出的发行版名称,`USERNAME`为linux子系统中的用户名
 * 执行wsl命令:`wsl -u USERNAME COMMAND`，其中`USERNAME`为linux子系统中的用户名，`COMMAND`为要执行的命令
+* 启动/关闭/重启
+    * 启动：`net start LxssManager`
+    * 关闭：`net stop LxssManager`
+    * 重启：`net stop LxssManager & net start LxssManager`
 * [升级`WSL1`到`WSL2`](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10#update-to-wsl-2)
     1. 查看已经安装的`WSL`：执行`列出已经安装的linux子系统`命令，并确认要从`WSL1`升级到`WSL2`的子系统，记下发行版名称，假设其为`WSL1_NAME`
         * 在管理员命令提示符中输入命令`wsl --set-version WSL1_NAME 2`并等待执行完成
