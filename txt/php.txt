@@ -1774,19 +1774,19 @@ array array_combine(array $keys,array $values)
 bool array_multisort(array &$array1[,int $array1_sort_order=SORT_ASC][,int $array1_sort_flags=SORT_REGULAR],array &$arrayN...)
         功能        对多维数组映射某个一维数组进行排序。例如:对$array1一维数组进行排序,$arrayN中与$array1映射位置的数组也会被排序
         返回值      排序成功返回true,否则返回false 
-        $array1     要作为映射参照排序的一组数组,将对此一维数组进行排序。 
-        $array1_sort_order 排序方法,可以取以下值:
-                        SORT_ASC        升序(省略此参数时默认值)
-                        SORT_DESC       降序
-        $array1_sort_flags 排序选项,可以取以下值:
-                        SORT_REGULAR       自动判断类型再进行排序(省略此参数时默认值)。如果是不同的数据类型，可能会出现意想不到的结果。 
-                        SORT_NUMERIC       按数字排序
-                        SORT_STRING        按字符串排序 
-                        SORT_NATURAL       按自然顺序字符串排序
-                        SORT_LOCALE_STRING 按本地字符集字符串排序,可以使用setlocale()函数来改变本地字符集
-                        SORT_FLAG_CASE     不分区大小写排序。仅可以和SORT_STRING与SORT_NATURAL进行按位或运算同时使用
+        $array1     要作为映射参照排序的一组数组,将对此一维数组进行排序。每个数组可以指定以下两个参数,依次排列在要使用这两个参数的后面,使用这两个参数的数组必须是一维数组
+                        $array1_sort_order 排序方法,可以取以下值:
+                                        SORT_ASC        升序(省略此参数时默认值)
+                                        SORT_DESC       降序
+                        $array1_sort_flags 排序选项,可以取以下值:
+                                        SORT_REGULAR       自动判断类型再进行排序(省略此参数时默认值)。如果是不同的数据类型，可能会出现意想不到的结果。 
+                                        SORT_NUMERIC       按数字排序
+                                        SORT_STRING        按字符串排序 
+                                        SORT_NATURAL       按自然顺序字符串排序
+                                        SORT_LOCALE_STRING 按本地字符集字符串排序,可以使用setlocale()函数来改变本地字符集
+                                        SORT_FLAG_CASE     不分区大小写排序。仅可以和SORT_STRING与SORT_NATURAL进行按位或运算同时使用
         $arrayN     其他要与$array1作为映射排序的数组(长度必须与$array1相等),如有多个数组,使用英文逗号(,)隔开。 
-************************************************************ 
+************************************************************
 变量检测函数
 ******************************
 bool isset(mixed $var1,mixed $var2...)
