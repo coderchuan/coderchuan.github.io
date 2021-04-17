@@ -2016,7 +2016,7 @@ bool session_start(array $options=array())
                         use_only_cookies         默认值为true。true表示只使用cookie来传递会话ID。设置此选择为true时，不使用POST或者GET传递会话ID。设置为false时可以使用COOKIE、GET或POST来传递会话ID
                         use_cookies              默认值为true。true表示使用cookie来传递会话ID。flase表示不使用cookie传递会话ID
                         name                     默认值为"PHPSESSID"。会话名称。
-                        cookie_lifetime          默认值为0，单位为秒。发送到浏览器的cookie的文件的生命周期。0表示会话结束即生命周期结束
+                        cookie_lifetime          默认值为0，单位为秒。发送到浏览器的cookie键值为文件的"PHPSESSID"的生命周期。0表示会话结束即生命周期结束
                         cookie_path              默认值为"/"。cookie路径
                         cookie_domain            默认值为""。cookie域名
                         cookie_secure            默认值为false。true表示使用HTTPS安全传输协议来传输cookie
