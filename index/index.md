@@ -1,4 +1,6 @@
 ## 我的笔记
+1. excel
+    * [常用公式](./index.html?title=/md/excel/常用公式)
 1. git与markdown
     * [git](./index.html?title=/md/git与markdown/git)
     * [github_pages](./index.html?title=/md/git与markdown/github_pages)
@@ -35,6 +37,8 @@
         * [xdebug](./index.html?title=/md/php/文档/xdebug)
         * [会话](./index.html?title=/md/php/文档/会话)
         * 函数
+            * 数组
+                * [extract](./index.html?title=/md/php/文档/函数/数组/extract)
             * 时间与日期
                 * [date](./index.html?title=/md/php/文档/函数/时间与日期/date)
                 * [gmdate](./index.html?title=/md/php/文档/函数/时间与日期/gmdate)
@@ -142,11 +146,14 @@
             * [数据库连接配置](./index.html?title=/md/yii2/文档/数据库/数据库连接配置)
             * [查询生成器](./index.html?title=/md/yii2/文档/数据库/查询生成器)
             * [活动查询生成器](./index.html?title=/md/yii2/文档/数据库/活动查询生成器)
+        * 登录与鉴权
+            * [登录](./index.html?title=/md/yii2/文档/登录与鉴权/登录)
         * 验证器
             * [验证器](./index.html?title=/md/yii2/文档/验证器/验证器)
             * [验证码](./index.html?title=/md/yii2/文档/验证器/验证码)
     * 示例
-        * 验证器
+        * [发送邮件](./index.html?title=/md/yii2/示例/发送邮件)
+        * [数据库连接](./index.html?title=/md/yii2/示例/数据库连接)
 1. 其他
     * [ip地址](./index.html?title=/md/其他/ip地址)
     * [中华字经](./index.html?title=/md/其他/中华字经)
@@ -165,3 +172,4 @@
     * [vmware](./index.html?title=/md/虚拟机/vmware)
 1. 设备
     * [itoos_ka2蓝牙耳机](./index.html?title=/md/设备/itoos_ka2蓝牙耳机)
+    * [oneplus_one](./index.html?title=/md/设备/oneplus_one)
