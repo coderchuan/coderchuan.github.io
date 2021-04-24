@@ -27,6 +27,11 @@
     * twrp中挂载选项中的"启用MTP"功能无效的解决方法
         1. 在Windows10设备管理器-类似"Android Devices"的选项-"ADB Interface"-卸载设备(勾选删除此设备的驱动程序)-卸载
         1. 在twrp中点击"停用MTP",再点击"启用MTP"即可在计算机中发现存储设备
+* 使用`adb shell`命令进入手机命令行
+    1. 将"ADB_Tool"复制到`C:\Program Files\`目录下
+    1. 在环境变量`PATH`中添加`C:\Program Files\ADB_Tool`
+    1. 手机中开启开发者调试模式
+    1. 在windows命令行中执行`adb shell`即可进入手机命令行界面
 * 安装`ubuntu touch`(底包为cm13)
     * 安装最新版`ubuntu touch`
         1. [ubports下载](https://devices.ubuntu-touch.io/device/bacon/)并安装,简称"ubports"
