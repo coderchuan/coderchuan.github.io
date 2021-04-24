@@ -28,14 +28,21 @@
         1. 在Windows10设备管理器-类似"Android Devices"的选项-"ADB Interface"-卸载设备(勾选删除此设备的驱动程序)-卸载
         1. 在twrp中点击"停用MTP",再点击"启用MTP"即可在计算机中发现存储设备
 * 安装`ubuntu touch`(底包为cm13)
-    * 使用ubports安装
+    * 安装最新版`ubuntu touch`
         1. [ubports下载](https://devices.ubuntu-touch.io/device/bacon/)并安装,简称"ubports"
         1. 配置VPN使计算机可以全局访问外网
         1. 配置好"手机环境"
         1. 运行ubports,选择机型,选择系统版本,勾选Wipe Userdata,勾选Bootstrap,按提示进行安装直到完成 
-    * 使用恢复模式安装(ubuntu touch 16.04)
-        1. 配置好"计算机环境"
-        1. 刷入twrp,并使用MTP拷贝"A0001_Backup"拷贝到手机存储根目录下("/sdcard")
-        1. 断开数据线与计算机的连接,将手机重启进入fastboot模式,通过数据线连接手机与计算机
-        1. 在工具包中进行如下操作:备份/恢复还原系统-还原系统,等待完成即可
+    * 安装`ubuntu touch 16.04`
+        * 使用ubports安装
+            1. 断开Windows的网络连接
+            1. 将ubports工具源下的ubports文件夹、ubports-installer文件夹复制到`C:\Users\当前用户名\AppData\Roaming\`文件夹下
+            1. 配置好"手机环境"
+            1. 运行ubports,选择机型,选择系统版本,勾选Wipe Userdata,勾选Bootstrap,按提示进行安装直到完成 
+            1. 恢复Windows的网络连接
+        * 使用恢复模式安装
+            1. 配置好"计算机环境"
+            1. 刷入twrp,并使用MTP拷贝"A0001_Backup"拷贝到手机存储根目录下("/sdcard")
+            1. 断开数据线与计算机的连接,将手机重启进入fastboot模式,通过数据线连接手机与计算机
+            1. 在工具包中进行如下操作:备份/恢复还原系统-还原系统,等待完成即可
     
