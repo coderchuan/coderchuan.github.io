@@ -50,4 +50,8 @@
             1. 刷入twrp,并使用MTP拷贝"A0001_Backup"拷贝到手机存储根目录下("/sdcard")
             1. 断开数据线与计算机的连接,将手机重启进入fastboot模式,通过数据线连接手机与计算机
             1. 在工具包中进行如下操作:备份/恢复还原系统-还原系统,等待完成即可
-    
+* 修改mac地址
+    1. 进入`ubuntu touch`系统
+    1. 切换为`root用户`(需要先为`phablet`用户设置密码):`sudo su - root`
+    1. 挂载系统分区可写:`mount -o rw,remount /`
+    1. 编辑`nano /persist/WCNSS_qcom_cfg.ini`文件,修改`Intf0MacAddress`项,其值为`12位16进制数`

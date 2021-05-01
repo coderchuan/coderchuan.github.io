@@ -19,7 +19,7 @@ function getMachineUuid()
     if(preg_match("{win}ui",PHP_OS)){
         $command="getmac";
     }else if(preg_match("{lin}ui",PHP_OS)){
-        $command="find /sys/ -type f -name address 2>/dev/null | xargs cat | grep -Pio \"^[0-9A-F:]{17}\$\"";
+        $command="find /sys/ -type f -name address | grep devices | grep -v virtual 2>/dev/null | xargs cat | grep -Pio \"^[0-9A-F:]{17}\$\"";
     }else return $retMsg;
 
     exec($command,$a);
