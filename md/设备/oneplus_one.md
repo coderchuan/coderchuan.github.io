@@ -17,7 +17,9 @@
         1. 在工具包中进行如下操作:Recovery卡刷-浏览选择cm_base.zip,不要勾选双清系统和格式化System,安装完成后手机开机
         1. 断开数据线与计算机的连接,将手机重启进入fastboot模式,通过数据线连接手机与计算机
         1. 在工具包中进行如下操作:Recovery卡刷-浏览选择cm13.zip,勾选双清系统和格式化System,安装完成后手机开机
-        1. 断开数据线与计算机的连接,将手机重启进入fastboot模式,通过数据线连接手机与计算机
+        1. 断开数据线与计算机的连接,将手机重启进入fastboot模式,通过数据线连接手机与计算机 
+        1. 在工具包中进行如下操作:Recovery卡刷-浏览选择bacon_firmware.zip,不要勾选双清系统和格式化System,安装完成后手机开机
+        1. 断开数据线与计算机的连接,将手机重启进入fastboot模式,通过数据线连接手机与计算机 
 * 刷入twrp(可在"recovery模式"下使用MTP连接计算机传输文件)
     * 刷入步骤
         1. 配置好"计算机环境"
@@ -42,10 +44,10 @@
         * 使用ubports安装
             1. 断开Windows的网络连接
             1. 将ubports工具源下的ubports文件夹、ubports-installer文件夹复制到`C:\Users\当前用户名\AppData\Roaming\`文件夹下
-            1. 配置好"手机环境"
+            1. 配置好"手机环境"。若是将`ubuntu touch 16.04`重装(手机中已经是此系统,需要重新安装以恢复初始状态)则可省略此步骤 
             1. 运行ubports,选择机型,选择系统版本,勾选Wipe Userdata,勾选Bootstrap,按提示进行安装直到完成 
-            1. 恢复Windows的网络连接
-        * 使用恢复模式安装
+            1. 恢复Windows的网络连接 
+        * 使用恢复模式安装(仅适用于1号机,后盖摄像头左侧有机号标识) 
             1. 配置好"计算机环境"
             1. 刷入twrp,并使用MTP拷贝"A0001_Backup"拷贝到手机存储根目录下("/sdcard")
             1. 断开数据线与计算机的连接,将手机重启进入fastboot模式,通过数据线连接手机与计算机
@@ -55,3 +57,4 @@
     1. 切换为`root用户`(需要先为`phablet`用户设置密码):`sudo su - root`
     1. 挂载系统分区可写:`mount -o rw,remount /`
     1. 编辑`nano /persist/WCNSS_qcom_cfg.ini`文件,修改`Intf0MacAddress`项,其值为`12位16进制数`
+    
