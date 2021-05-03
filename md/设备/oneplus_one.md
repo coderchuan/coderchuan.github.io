@@ -45,7 +45,7 @@
     1. 刷入底包
         1. 刷入卡刷前置包`cm_base.zip`
         1. 刷入卡刷主体包`cm13.zip`
-        1. 刷入卡刷基带包`浏览选择bacon_firmware.zip`
+        1. 刷入卡刷基带包`bacon_firmware.zip`
     1. 使用ubports安装
         1. 断开Windows的网络连接 
         1. 将ubports工具源下的ubports文件夹、ubports-installer文件夹复制到`C:\Users\当前用户名\AppData\Roaming\`文件夹下
