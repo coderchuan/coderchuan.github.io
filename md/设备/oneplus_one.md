@@ -39,6 +39,7 @@
         1. 切换为`root用户`(需要先为`phablet`用户设置密码):`sudo su - root`
         1. 挂载系统分区可写:`mount -o rw,remount /`
         1. 编辑`nano /persist/WCNSS_qcom_cfg.ini`文件,修改`Intf0MacAddress`项,其值为`12位16进制数`
+        1. 重启:`reboot`
     * 备份和恢复(首先配置好计算机环境)
         1. 手机进入fastboot并用数据线连接计算机
         1. 运行'工具包'
