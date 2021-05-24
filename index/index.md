@@ -10,7 +10,6 @@
 1. linux
     * [wget_curl](./index.html?title=/md/linux/wget_curl)
     * [区域与时间](./index.html?title=/md/linux/区域与时间)
-    * [压缩与解压缩](./index.html?title=/md/linux/压缩与解压缩)
     * [常用命令](./index.html?title=/md/linux/常用命令)
     * [文件管理](./index.html?title=/md/linux/文件管理)
     * [管道与xargs](./index.html?title=/md/linux/管道与xargs)
@@ -30,6 +29,8 @@
         * [与nginx的通信接口配置](./index.html?title=/md/lnmp/php-fpm配置/与nginx的通信接口配置)
         * [用户配置](./index.html?title=/md/lnmp/php-fpm配置/用户配置)
     * [文件上传大小限制配置](./index.html?title=/md/lnmp/文件上传大小限制配置)
+1. ocr
+    * [环境配置](./index.html?title=/md/ocr/环境配置)
 1. php
     * 文档
         * [composer](./index.html?title=/md/php/文档/composer)
