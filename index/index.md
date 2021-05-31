@@ -1,6 +1,6 @@
 ## 我的笔记
 1. docker
-    * [基本操作](./index.html?title=/md/docker/基本操作)
+    * [镜像与容器](./index.html?title=/md/docker/镜像与容器)
 1. excel
     * [常用公式](./index.html?title=/md/excel/常用公式)
 1. git与markdown
@@ -29,6 +29,9 @@
         * [与nginx的通信接口配置](./index.html?title=/md/lnmp/php-fpm配置/与nginx的通信接口配置)
         * [用户配置](./index.html?title=/md/lnmp/php-fpm配置/用户配置)
     * [文件上传大小限制配置](./index.html?title=/md/lnmp/文件上传大小限制配置)
+1. mysql
+    * [安装及配置](./index.html?title=/md/mysql/安装及配置)
+    * [用户及授权](./index.html?title=/md/mysql/用户及授权)
 1. ocr
     * [环境配置](./index.html?title=/md/ocr/环境配置)
 1. php
