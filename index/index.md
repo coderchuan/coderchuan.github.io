@@ -1,11 +1,12 @@
 ## 我的笔记
 1. docker
+    * [安装](./index.html?title=/md/docker/安装)
     * [镜像与容器](./index.html?title=/md/docker/镜像与容器)
 1. excel
     * [常用公式](./index.html?title=/md/excel/常用公式)
 1. git与markdown
-    * [github_pages](./index.html?title=/md/git与markdown/github_pages)
     * [git](./index.html?title=/md/git与markdown/git)
+    * [github_pages](./index.html?title=/md/git与markdown/github_pages)
     * [markdown](./index.html?title=/md/git与markdown/markdown)
 1. linux
     * [wget_curl](./index.html?title=/md/linux/wget_curl)
@@ -36,10 +37,10 @@
     * [环境配置](./index.html?title=/md/ocr/环境配置)
 1. php
     * 文档
-        * [composer](./index.html?title=/md/php/文档/composer)
         * [PDO数据库](./index.html?title=/md/php/文档/PDO数据库)
-        * [phpdoc](./index.html?title=/md/php/文档/phpdoc)
+        * [composer](./index.html?title=/md/php/文档/composer)
         * [php-fpm](./index.html?title=/md/php/文档/php-fpm)
+        * [phpdoc](./index.html?title=/md/php/文档/phpdoc)
         * [xdebug](./index.html?title=/md/php/文档/xdebug)
         * [会话](./index.html?title=/md/php/文档/会话)
         * 函数
@@ -170,6 +171,7 @@
 1. 内网穿透
     * 文档
         * [frp](./index.html?title=/md/内网穿透/文档/frp)
+    * 示例
 1. 正则
     * [regex_pcre](./index.html?title=/md/正则/regex_pcre)
 1. 虚拟机
