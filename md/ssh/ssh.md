@@ -64,6 +64,7 @@
         * `Port PORT`：`PORT`表示端口,若不指定此行,默认为22 
         * `IdentityFile ID_RSA_FILE`：`ID_RSA_FILE`表示私钥文件,若不指定此行,默认为`~/.ssh/id_rsa` 
         * `ProxyCommand ssh HOSTALIAS_O -W %h:%p`：用于代理(跳板),·HOSTALIAS_O`表示使用此别名的主机进行代理,`HOSTALIAS_O`应该事先配置好。不配置此项时表示不使用代理 
+        * `KexAlgorithms +diffie-hellman-group1-sha1`:当连接`ssh`出现`no matching key exchange method found. Their offer: diffie-hellman-group1-sha1`错误时添加此项
     * 注意，美观要求
         * `include`应与其他语句间有至少一行空行 
         * 每组配置间应有至少一行空行 
