@@ -4,7 +4,7 @@
     justify-content: center;
     background-image: url(/img/日记本/writing_paper.png);
     width:calc(100vw - 35px);
-    height:clac(100vh - 35px);
+    height:calc(100vh - 35px);
 }.message_box{
     font-family:"微软雅黑";
     width:80%;
@@ -35,6 +35,9 @@
 }.video_container_div{
     width:800px;
     height:550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }.show_bar{
     background-color:#41ACC0;
     height:50px;
@@ -58,7 +61,7 @@
     <div class='video_container_div'>
         <div class="show_bar">
             <div class='close_video'>
-                <img style='width:40px;height:40px' src='/img/日记本/close.png'/> 
+                <img style='width:40px;height:40px;cursor:pointer' src='/img/日记本/close.png'/> 
             </div> 
         </div> 
         <div class="video_div">
