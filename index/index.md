@@ -1,6 +1,7 @@
 ## 我的笔记
 1. docker
     * [安装](./index.html?title=/md/docker/安装)
+    * [容器间通讯](./index.html?title=/md/docker/容器间通讯)
     * [镜像与容器](./index.html?title=/md/docker/镜像与容器)
 1. excel
     * [常用公式](./index.html?title=/md/excel/常用公式)
@@ -15,6 +16,11 @@
     * [文件管理](./index.html?title=/md/linux/文件管理)
     * [管道与xargs](./index.html?title=/md/linux/管道与xargs)
     * [终端配置](./index.html?title=/md/linux/终端配置)
+    * 编译安装
+        * 工具及依赖
+            * [gcc](./index.html?title=/md/linux/编译安装/工具及依赖/gcc)
+            * [make](./index.html?title=/md/linux/编译安装/工具及依赖/make)
+        * [编译安装](./index.html?title=/md/linux/编译安装/编译安装)
     * [自启动](./index.html?title=/md/linux/自启动)
     * [计划任务](./index.html?title=/md/linux/计划任务)
     * [软件安装与软件](./index.html?title=/md/linux/软件安装与软件)
@@ -180,3 +186,4 @@
 1. 设备
     * [itoos_ka2蓝牙耳机](./index.html?title=/md/设备/itoos_ka2蓝牙耳机)
     * [oneplus_one](./index.html?title=/md/设备/oneplus_one)
+    * [pandora_box](./index.html?title=/md/设备/pandora_box)
