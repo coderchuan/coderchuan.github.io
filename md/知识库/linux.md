@@ -20,8 +20,13 @@
     * `pkill -9 NAME`,杀死程序名为`NAME`的进程  
 
 ## 多语言输入输出
-1. 编辑`/etc/profile`在末尾添加`export LANG=C.UTF-8` 
-2. 重启系统
+* 配置文件
+    * rpm系:`/etc/sysconfig`
+    * deb系:`/etc/default/locale`
+        * ubuntu
+* 使系统支持多语言输入输出
+    1. 编辑配置文件并在末尾添加`LANG="C.UTF-8"` 
+    2. 重新登录用户
 
 ## 链接文件路径 
 * 创建软链接：`ln -s 原文件 指向原文件的软链接文件`
