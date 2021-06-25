@@ -13,6 +13,7 @@
     * [vim](./index.html?title=/md/linux/vim)
     * [wget_curl](./index.html?title=/md/linux/wget_curl)
     * [区域与时间](./index.html?title=/md/linux/区域与时间)
+    * [压缩解压缩](./index.html?title=/md/linux/压缩解压缩)
     * [文件管理](./index.html?title=/md/linux/文件管理)
     * [管道与xargs](./index.html?title=/md/linux/管道与xargs)
     * [终端配置](./index.html?title=/md/linux/终端配置)
@@ -177,6 +178,7 @@
 1. 内网穿透
     * 文档
         * [frp](./index.html?title=/md/内网穿透/文档/frp)
+    * 示例
 1. 正则
     * [regex_pcre](./index.html?title=/md/正则/regex_pcre)
 1. 知识库
