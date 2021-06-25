@@ -9,6 +9,8 @@
 ## 查看系统架构
 * `uname -a`
 
+## bash自动补全:安装`bash-completion`
+
 ## 进程
 * 查看进程号:`pgrep NAME [OPTION]`,查找程序名为`NAME`的正在运行的进程,其中`OPTION`可取以下值
     * `OPTION`
