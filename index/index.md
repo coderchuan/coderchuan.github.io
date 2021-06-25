@@ -10,9 +10,9 @@
     * [github_pages](./index.html?title=/md/git与markdown/github_pages)
     * [markdown](./index.html?title=/md/git与markdown/markdown)
 1. linux
+    * [vim](./index.html?title=/md/linux/vim)
     * [wget_curl](./index.html?title=/md/linux/wget_curl)
     * [区域与时间](./index.html?title=/md/linux/区域与时间)
-    * [常用命令](./index.html?title=/md/linux/常用命令)
     * [文件管理](./index.html?title=/md/linux/文件管理)
     * [管道与xargs](./index.html?title=/md/linux/管道与xargs)
     * [终端配置](./index.html?title=/md/linux/终端配置)
@@ -177,9 +177,10 @@
 1. 内网穿透
     * 文档
         * [frp](./index.html?title=/md/内网穿透/文档/frp)
-    * 示例
 1. 正则
     * [regex_pcre](./index.html?title=/md/正则/regex_pcre)
+1. 知识库
+    * [linux](./index.html?title=/md/知识库/linux)
 1. 虚拟机
     * [termux](./index.html?title=/md/虚拟机/termux)
     * [vmware](./index.html?title=/md/虚拟机/vmware)
