@@ -137,37 +137,19 @@
     * [命令行软件与软件安装](./index.html?title=/md/windows/命令行软件与软件安装)
     * [禁止和启用Win10自动更新](./index.html?title=/md/windows/禁止和启用Win10自动更新)
 1. yii2
-    * 文档
-        * [安装部署](./index.html?title=/md/yii2/文档/安装部署)
-        * 应用结构
-            * 入口脚本及重要概念
-                * [ID映射规则](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/ID映射规则)
-                * [入口脚本](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/入口脚本)
-                * [别名](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/别名)
-                * [基类BaseObject](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/基类BaseObject)
-                * [应用的组成与分类](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/应用的组成与分类)
-                * [配置](./index.html?title=/md/yii2/文档/应用结构/入口脚本及重要概念/配置)
-            * 控制器
-                * [web控制器](./index.html?title=/md/yii2/文档/应用结构/控制器/web控制器)
-                * [基本控制器](./index.html?title=/md/yii2/文档/应用结构/控制器/基本控制器)
-            * 模型
-                * [临时模型](./index.html?title=/md/yii2/文档/应用结构/模型/临时模型)
-                * [模型](./index.html?title=/md/yii2/文档/应用结构/模型/模型)
-                * [活动记录](./index.html?title=/md/yii2/文档/应用结构/模型/活动记录)
-            * [组件](./index.html?title=/md/yii2/文档/应用结构/组件)
-            * [视图](./index.html?title=/md/yii2/文档/应用结构/视图)
-        * 数据库
-            * [数据库连接配置](./index.html?title=/md/yii2/文档/数据库/数据库连接配置)
-            * [查询生成器](./index.html?title=/md/yii2/文档/数据库/查询生成器)
-            * [活动查询生成器](./index.html?title=/md/yii2/文档/数据库/活动查询生成器)
-        * 登录与鉴权
-            * [登录](./index.html?title=/md/yii2/文档/登录与鉴权/登录)
-        * 验证器
-            * [验证器](./index.html?title=/md/yii2/文档/验证器/验证器)
-            * [验证码](./index.html?title=/md/yii2/文档/验证器/验证码)
-    * 示例
-        * [发送邮件](./index.html?title=/md/yii2/示例/发送邮件)
-        * [数据库连接](./index.html?title=/md/yii2/示例/数据库连接)
+    * [URL处理](./index.html?title=/md/yii2/URL处理)
+    * [别名](./index.html?title=/md/yii2/别名)
+    * [发送邮件](./index.html?title=/md/yii2/发送邮件)
+    * [安装部署](./index.html?title=/md/yii2/安装部署)
+    * [应用程序配置](./index.html?title=/md/yii2/应用程序配置)
+    * [数据库连接](./index.html?title=/md/yii2/数据库连接)
+    * [模型](./index.html?title=/md/yii2/模型)
+    * [登录与注册](./index.html?title=/md/yii2/登录与注册)
+    * 视图
+        * [主题](./index.html?title=/md/yii2/视图/主题)
+        * [前端资源管理](./index.html?title=/md/yii2/视图/前端资源管理)
+        * [视图与布局](./index.html?title=/md/yii2/视图/视图与布局)
+    * [验证器](./index.html?title=/md/yii2/验证器)
 1. 其他
     * [ip地址](./index.html?title=/md/其他/ip地址)
     * [中华字经](./index.html?title=/md/其他/中华字经)
@@ -178,7 +160,6 @@
 1. 内网穿透
     * 文档
         * [frp](./index.html?title=/md/内网穿透/文档/frp)
-    * 示例
 1. 正则
     * [regex_pcre](./index.html?title=/md/正则/regex_pcre)
 1. 知识库
